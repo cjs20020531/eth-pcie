@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep  4 15:53:26 2026
+# Process ID: 15436
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16124 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2023_2/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1642.816 ; gain = 435.652
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 15:54:52 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 15:54:52 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 15:58:10 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 15:58:10 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:02:41 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:02:41 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+set fs [get_filesets sources_1]
+sources_1
+puts "TOP = [get_property TOP $fs]"
+TOP = fpga
+puts "Before = [get_property GENERIC $fs]"
+Before = FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 IF_COUNT=2 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128
+set updated_generics {}
+foreach item [get_property GENERIC $fs] {
+    if {![regexp {^IF_COUNT=} $item]} {
+        lappend updated_generics $item
+    }
+}
+lappend updated_generics IF_COUNT=1
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1
+set_property GENERIC $updated_generics $fs
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+puts "After = [get_property GENERIC $fs]"
+After = FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1
+lappend updated_generics PTP_TS_ENABLE=0
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1 PTP_TS_ENABLE=0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:14:27 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:14:27 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+lappend updated_generics PTP_TS_ENABLE=0
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1 PTP_TS_ENABLE=0 PTP_TS_ENABLE=0
+lappend updated_generics TDMA_BER_ENABLE=0
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1 PTP_TS_ENABLE=0 PTP_TS_ENABLE=0 TDMA_BER_ENABLE=0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:16:20 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:16:20 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+lappend updated_generics TDMA_BER_ENABLE=0
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1 PTP_TS_ENABLE=0 PTP_TS_ENABLE=0 TDMA_BER_ENABLE=0 TDMA_BER_ENABLE=0
+lappend updated_generics PTP_TS_ENABLE=0
+FPGA_ID=32'h04730093 FW_ID=32'h00000000 FW_VER=32'h00000100 BOARD_ID=32'h10ee906a BOARD_VER=32'h01000000 BUILD_DATE=32'd1783950777 GIT_HASH=32'h00000000 RELEASE_INFO=32'h00000000 TDMA_BER_ENABLE=0 PORTS_PER_IF=1 SCHED_PER_IF=1 PORT_MASK=0 CLK_PERIOD_NS_NUM=4 CLK_PERIOD_NS_DENOM=1 PTP_CLOCK_PIPELINE=0 PTP_CLOCK_CDC_PIPELINE=0 PTP_PORT_CDC_PIPELINE=0 PTP_PEROUT_ENABLE=1 PTP_PEROUT_COUNT=1 EVENT_QUEUE_OP_TABLE_SIZE=32 TX_QUEUE_OP_TABLE_SIZE=32 RX_QUEUE_OP_TABLE_SIZE=32 CQ_OP_TABLE_SIZE=32 EQN_WIDTH=6 TX_QUEUE_INDEX_WIDTH=13 RX_QUEUE_INDEX_WIDTH=8 CQN_WIDTH=14 EQ_PIPELINE=3 TX_QUEUE_PIPELINE=4 RX_QUEUE_PIPELINE=3 CQ_PIPELINE=5 TX_DESC_TABLE_SIZE=32 RX_DESC_TABLE_SIZE=32 RX_INDIR_TBL_ADDR_WIDTH=8 TX_SCHEDULER_OP_TABLE_SIZE=32 TX_SCHEDULER_PIPELINE=4 TDMA_INDEX_WIDTH=6 PTP_TS_ENABLE=1 TX_CPL_FIFO_DEPTH=32 TX_CHECKSUM_ENABLE=1 RX_HASH_ENABLE=1 RX_CHECKSUM_ENABLE=1 PFC_ENABLE=1 LFC_ENABLE=1 ENABLE_PADDING=1 ENABLE_DIC=1 MIN_FRAME_LENGTH=64 TX_FIFO_DEPTH=32768 RX_FIFO_DEPTH=65536 MAX_TX_SIZE=9214 MAX_RX_SIZE=9214 TX_RAM_SIZE=32768 RX_RAM_SIZE=32768 DDR_CH=1 DDR_ENABLE=0 AXI_DDR_ID_WIDTH=8 AXI_DDR_MAX_BURST_LEN=256 APP_ID=32'h00000000 APP_ENABLE=0 APP_CTRL_ENABLE=1 APP_DMA_ENABLE=1 APP_AXIS_DIRECT_ENABLE=1 APP_AXIS_SYNC_ENABLE=1 APP_AXIS_IF_ENABLE=1 APP_STAT_ENABLE=1 DMA_IMM_ENABLE=0 DMA_IMM_WIDTH=32 DMA_LEN_WIDTH=16 DMA_TAG_WIDTH=16 RAM_ADDR_WIDTH=15 RAM_PIPELINE=2 IRQ_INDEX_WIDTH=6 AXIL_CTRL_DATA_WIDTH=32 AXIL_CTRL_ADDR_WIDTH=24 AXIL_APP_CTRL_DATA_WIDTH=32 AXIL_APP_CTRL_ADDR_WIDTH=24 AXIS_ETH_TX_PIPELINE=0 AXIS_ETH_TX_FIFO_PIPELINE=2 AXIS_ETH_TX_TS_PIPELINE=0 AXIS_ETH_RX_PIPELINE=0 AXIS_ETH_RX_FIFO_PIPELINE=2 STAT_ENABLE=1 STAT_DMA_ENABLE=1 STAT_PCIE_ENABLE=1 STAT_INC_WIDTH=24 STAT_ID_WIDTH=12 AXIS_PCIE_DATA_WIDTH=128 IF_COUNT=1 PTP_TS_ENABLE=0 PTP_TS_ENABLE=0 TDMA_BER_ENABLE=0 TDMA_BER_ENABLE=0 PTP_TS_ENABLE=0
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:30:09 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:30:09 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:31:31 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:31:31 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 16:33:23 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 16:33:23 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 17:11:31 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 17:11:31 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep  4 17:16:57 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 17:16:57 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Sep  6 14:56:26 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Sun Sep  6 14:56:26 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Sep  6 15:18:32 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Sun Sep  6 15:18:32 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2023.2
+  **** Build date : Oct 13 2023 at 21:31:40
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.2.0
+  ****** Build date   : Oct 10 2023-12:01:56
+    **** Build number : 2023.2.1696910516
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/06307
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+current_hw_device [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+INFO: [Labtools 27-1435] Device xczu7 (JTAG device index = 0) is not programmed (DONE status = 0).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.613 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xczu7 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Sep  6 16:07:39 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Sun Sep  6 16:07:39 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.305 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+INFO: [Labtools 27-2302] Device xczu7 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:24:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-06 16:24:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/mqnic_prj/mqnic_prj.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes phy_txd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes phy_rxd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes phy_txd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes phy_rxd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:28:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-06 16:28:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/mqnic_prj/mqnic_prj.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:28:44
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Sep-06 16:29:06
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:29:07
+set_property TRIGGER_COMPARE_VALUE neq1'bX [get_hw_probes phy_tx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq1'b0 [get_hw_probes phy_tx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Sep-06 16:31:28
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:31:29
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.867 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+INFO: [Labtools 27-2302] Device xczu7 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:38:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-06 16:38:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/mqnic_prj/mqnic_prj.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-06 16:38:42
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Sep-06 16:38:50
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\common\mqnic_port_tx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Sep  7 10:15:50 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Mon Sep  7 10:15:50 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1878.715 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+INFO: [Labtools 27-2302] Device xczu7 (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-07 10:31:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-07 10:31:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/mqnic_prj/mqnic_prj.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-07 10:31:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-07 10:31:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/FPGA/mqnic_prj/mqnic_prj.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-07 10:31:29
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Sep-07 10:32:38
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.

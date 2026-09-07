@@ -1,0 +1,1144 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Sep  7 10:19:15 2026
+# Process ID: 12512
+# Current directory: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1
+# Command line: vivado.exe -log fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga.tcl -notrace
+# Log file: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.vdi
+# Journal file: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+source fpga.tcl -notrace
+Command: link_design -top fpga -part xczu7ev-ffvc1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.dcp' for cell 'pcie4_uscale_plus_inst'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'u_ila_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.863 . Memory (MB): peak = 1856.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1897 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila_0 UUID: 23e7d65a-79bc-59f7-bc47-406c1714dfae 
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_impl_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_impl_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:225]
+set_switching_activity: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 4288.664 ; gain = 1723.121
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1839' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:232]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1840' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:234]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1857' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:236]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:247]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:248]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:252]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:253]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:255]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:256]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:257]
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila_0/inst'
+Parsing XDC File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+Finished Parsing XDC File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst
+INFO: [Timing 38-2] Deriving generated clocks [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl:23]
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_cpl_fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/eth_mac_inst/rx_fifo/fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/eth_mac_inst/tx_fifo/fifo_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/sync_reset.tcl]
+Inserting timing constraints for sync_reset instance sync_reset_125mhz_inst
+Inserting timing constraints for sync_reset instance sync_reset_50mhz_inst
+Inserting timing constraints for sync_reset instance sync_reset_phy_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/sync_reset.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+Inserting timing constraints for ptp_td_leaf instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_ptp_inst/ptp_clock_inst/ptp_td_leaf_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+Inserting timing constraints for mqnic_port instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst
+WARNING: [Vivado 12-180] No cells matched 'tx_enable_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_enable_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_en_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_en_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_req_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_req_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_en_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_en_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_req_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_req_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_fc_quanta_step_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_fc_quanta_step_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_enable_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_enable_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_en_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_en_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_ack_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_ack_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_en_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_en_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_ack_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_ack_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_req_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_req_sync_3_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_req_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_req_sync_3_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_fc_quanta_step_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_fc_quanta_step_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+Inserting timing constraints for mqnic_ptp_clock instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_ptp_inst/ptp_clock_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+Inserting timing constraints for mqnic_rb_clk_info instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_rb_clk_info_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == rb_drp || REF_NAME == rb_drp)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == eth_xcvr_phy_10g_gty_wrapper || REF_NAME == eth_xcvr_phy_10g_gty_wrapper)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == tdma_ber_ch || REF_NAME == tdma_ber_ch)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:73]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'TIMING-54' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:73]
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 69 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 4288.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 873 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 60 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 6 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 15 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 209 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 87 instances
+  RAM32X1S => RAM32X1S (RAMS32): 48 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 33 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 358 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 19 instances
+
+23 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:49 . Memory (MB): peak = 4288.664 ; gain = 3668.914
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 246756778
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = cae569c251913fc8.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 1.1 Core Generation And Design Setup | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1ea70989b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 34 inverters resulting in an inversion of 305 pins
+INFO: [Opt 31-138] Pushed 37 inverter(s) to 1019 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell u_ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 157489467
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Retarget | Checksum: 157489467
+INFO: [Opt 31-389] Phase Retarget created 748 cells and removed 1112 cells
+INFO: [Opt 31-1021] In phase Retarget, 69 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 4 Constant propagation | Checksum: 22420f069
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Constant propagation | Checksum: 22420f069
+INFO: [Opt 31-389] Phase Constant propagation created 302 cells and removed 408 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 49 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 190a75178
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Sweep | Checksum: 190a75178
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3073 cells
+INFO: [Opt 31-1021] In phase Sweep, 883 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1ca3a4676
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 4288.664 ; gain = 0.000
+BUFG optimization | Checksum: 1ca3a4676
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WCE/I_YESLUT6.U_SRLC16E due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WHCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WLCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCE/I_YESLUT6.U_SRLC16E due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCRST/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from u_ila_0/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCRST/I_YESLUT6.U_SRL32_B due to none static srl address bits
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1ca3a4676
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Shift Register Optimization | Checksum: 1ca3a4676
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1fcf8dec9
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Post Processing Netlist | Checksum: 1fcf8dec9
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 57 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1e99bc02d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1e99bc02d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1e99bc02d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 4288.664 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             748  |            1112  |                                             69  |
+|  Constant propagation         |             302  |             408  |                                             49  |
+|  Sweep                        |               0  |            3073  |                                            883  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             57  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1e99bc02d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 4288.664 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4288.664 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 128 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 45 newly gated: 17 Total Ports: 256
+Ending PowerOpt Patch Enables Task | Checksum: 282ed9f9d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 282ed9f9d
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 4919.445 ; gain = 630.781
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 128613297
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 128613297
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 128613297
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 4919.445 ; gain = 630.781
+INFO: [runtcl-4] Executing : report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx
+Command: report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.160 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e81b0ab9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ede2876a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16bc07553
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16bc07553
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 16bc07553
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1b11c6f09
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:32 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1470e9a11
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:34 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 15f3e0733
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:34 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 15f3e0733
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:39 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: bd6d5173
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:40 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:42 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:42 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:42 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:42 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:42 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: e968c8aa
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1151cb7ab
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:05 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 10 LUTNM shape to break, 1253 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 8, two critical 2, total 10, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 529 nets or LUTs. Breaked 10 LUTs, combined 519 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 47 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 45 nets.  Re-placed 159 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 45 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 159 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1402] Pass 1: Identified 6 candidate cells for Shift Register optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 8 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Physopt 32-527] Pass 1: Identified 1 candidate cell for BRAM register optimization
+INFO: [Physopt 32-665] Processed cell core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/rr_fifo/mem_reg_bram_2. 4 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 4 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 4919.445 ; gain = 0.000
+INFO: [Physopt 32-847] Pass 1: Identified 3 candidate cells for URAM register optimization
+INFO: [Physopt 32-665] Processed cell core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/cqm_inst/queue_ram_reg_uram_0. 87 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/cqm_inst/queue_ram_reg_uram_3. 64 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/tx_qm_inst/queue_ram_reg_uram_1. 64 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 215 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           10  |            519  |                   529  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                    45  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            8  |              0  |                     4  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            4  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           22  |            519  |                   579  |           0  |          10  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: d98d685c
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:02:14 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: d2e8d435
+
+Time (s): cpu = 00:04:00 ; elapsed = 00:02:23 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 2 Global Placement | Checksum: d2e8d435
+
+Time (s): cpu = 00:04:00 ; elapsed = 00:02:23 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1467ed25f
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:02:32 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: fac442ed
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:02:36 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 133f4a9cb
+
+Time (s): cpu = 00:05:03 ; elapsed = 00:02:58 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1ab051292
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:03:08 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 3.3.2 Slice Area Swap | Checksum: 1ab051292
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:03:08 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 3.3 Small Shape DP | Checksum: d2a13b5d
+
+Time (s): cpu = 00:05:59 ; elapsed = 00:03:28 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1319c19ba
+
+Time (s): cpu = 00:06:01 ; elapsed = 00:03:30 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 11b4012ed
+
+Time (s): cpu = 00:06:01 ; elapsed = 00:03:30 . Memory (MB): peak = 4919.445 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 11b4012ed
+
+Time (s): cpu = 00:06:01 ; elapsed = 00:03:30 . Memory (MB): peak = 4919.445 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 14f07938a
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.319 | TNS=-2.083 |
+Phase 1 Physical Synthesis Initialization | Checksum: e8aafb00
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4945.598 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: e8aafb00
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 4946.703 ; gain = 1.105
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14f07938a
+
+Time (s): cpu = 00:06:44 ; elapsed = 00:03:56 . Memory (MB): peak = 4946.703 ; gain = 27.258
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.512. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1906e2eef
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:03:59 . Memory (MB): peak = 4946.703 ; gain = 27.258
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:03:59 . Memory (MB): peak = 4946.703 ; gain = 27.258
+Phase 4.1 Post Commit Optimization | Checksum: 1906e2eef
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:04:00 . Memory (MB): peak = 4946.703 ; gain = 27.258
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4993.168 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2539a6f8f
+
+Time (s): cpu = 00:07:05 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2539a6f8f
+
+Time (s): cpu = 00:07:06 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+Phase 4.3 Placer Reporting | Checksum: 2539a6f8f
+
+Time (s): cpu = 00:07:06 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4993.168 ; gain = 0.000
+
+Time (s): cpu = 00:07:06 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c88b68c5
+
+Time (s): cpu = 00:07:06 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+Ending Placer Task | Checksum: 173b1edf1
+
+Time (s): cpu = 00:07:06 ; elapsed = 00:04:11 . Memory (MB): peak = 4993.168 ; gain = 73.723
+165 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:07:10 ; elapsed = 00:04:14 . Memory (MB): peak = 4993.168 ; gain = 73.723
+INFO: [runtcl-4] Executing : report_io -file fpga_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 4993.168 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file fpga_utilization_placed.rpt -pb fpga_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file fpga_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 4993.168 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.185 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 4993.168 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 97916495 ConstDB: 0 ShapeSum: 18f448bc RouteDB: c32c40a0
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.874 . Memory (MB): peak = 4993.168 ; gain = 0.000
+Post Restoration Checksum: NetGraph: a3961d92 | NumContArr: 28a0d489 | Constraints: 84739c5b | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 213538913
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 4993.168 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 213538913
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 4993.168 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 213538913
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 4993.168 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 156c73162
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 5039.180 ; gain = 46.012
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1df98d339
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:22 . Memory (MB): peak = 5090.805 ; gain = 97.637
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.586  | TNS=0.000  | WHS=-1.279 | THS=-275.101|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1c7dac457
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:42 . Memory (MB): peak = 5187.715 ; gain = 194.547
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.586  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1799e242c
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:42 . Memory (MB): peak = 5187.715 ; gain = 194.547
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00168901 %
+  Global Horizontal Routing Utilization  = 0.000623055 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 58401
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 50889
+  Number of Partially Routed Nets     = 7512
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1ab896aa2
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:44 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1ab896aa2
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:44 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2d23cd487
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:49 . Memory (MB): peak = 5323.781 ; gain = 330.613
+Phase 3 Initial Routing | Checksum: 24e134f0f
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:49 . Memory (MB): peak = 5323.781 ; gain = 330.613
+INFO: [Route 35-580] Design has 39 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+==============================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                          |
++====================+===================+==============================================================+
+| txoutclk_out[0]    | txoutclk_out[0]   | u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][17]_srl8/D |
+| txoutclk_out[0]    | txoutclk_out[0]   | u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][18]_srl8/D |
+| txoutclk_out[0]    | txoutclk_out[0]   | u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][20]_srl8/D |
+| txoutclk_out[0]    | txoutclk_out[0]   | u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][9]_srl8/D  |
+| txoutclk_out[0]    | txoutclk_out[0]   | u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][21]_srl8/D |
++--------------------+-------------------+--------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 12418
+ Number of Nodes with overlaps = 1157
+ Number of Nodes with overlaps = 142
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.024  | TNS=0.000  | WHS=-0.252 | THS=-3.117 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2ab0a254a
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:01:28 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.228 | TNS=-0.598 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1947735a1
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:34 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.157 | TNS=-0.527 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 20e28a744
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:35 . Memory (MB): peak = 5323.781 ; gain = 330.613
+Phase 4 Rip-up And Reroute | Checksum: 20e28a744
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:35 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1e9c7807b
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:01:42 . Memory (MB): peak = 5323.781 ; gain = 330.613
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.157 | TNS=-0.527 | WHS=0.010  | THS=0.000  |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 271d64ac5
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:48 . Memory (MB): peak = 5323.781 ; gain = 330.613
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.157 | TNS=-0.527 | WHS=0.010  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 14e81f21c
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:49 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 14e81f21c
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:01:49 . Memory (MB): peak = 5323.781 ; gain = 330.613
+Phase 5 Delay and Skew Optimization | Checksum: 14e81f21c
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:01:49 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1545ed1d9
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:54 . Memory (MB): peak = 5323.781 ; gain = 330.613
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.101 | TNS=-0.329 | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:54 . Memory (MB): peak = 5323.781 ; gain = 330.613
+Phase 6 Post Hold Fix | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:01:54 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.88996 %
+  Global Horizontal Routing Utilization  = 4.52629 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 76.0563%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 77.2512%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 58.6538%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 64.4231%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:05 ; elapsed = 00:01:54 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:01:54 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/gthe4_channel_gen.gen_gthe4_channel_inst[0].GTHE4_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE4_CHANNEL_X0Y10/SOUTHREFCLK1
+Phase 9 Depositing Routes | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:09 ; elapsed = 00:01:56 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:09 ; elapsed = 00:01:56 . Memory (MB): peak = 5323.781 ; gain = 330.613
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.101 | TNS=-0.329 | WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:15 ; elapsed = 00:01:59 . Memory (MB): peak = 5323.781 ; gain = 330.613
+Time taken to check if laguna hold fix is required (in secs): 0
+
+Phase 12 Physical Synthesis in Router
+
+Phase 12.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.096 | TNS=-0.316 | WHS=0.010 | THS=0.000 |
+Phase 12.1 Physical Synthesis Initialization | Checksum: 1d86e4f24
+
+Time (s): cpu = 00:04:49 ; elapsed = 00:02:21 . Memory (MB): peak = 5370.512 ; gain = 377.344
+
+Phase 12.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.096 | TNS=-0.316 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-952] Improved path group WNS = -0.057. Path group: clk_125mhz. Processed net: u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[7].U_M/allx_typeA_match_detection.ltlib_v1_0_1_allx_typeA_inst/all_in[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_125mhz. Processed net: u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][5]_srl8_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_125mhz. Processed net: core_inst/eth_mac_inst/eth_mac_1g_inst/axis_gmii_tx_inst/phy_txd[0].
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.057 | TNS=-0.267 | WHS=0.010 | THS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Phase 12.2 Critical Path Optimization | Checksum: 25933b71e
+
+Time (s): cpu = 00:04:55 ; elapsed = 00:02:24 . Memory (MB): peak = 5439.352 ; gain = 446.184
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 5439.352 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-0.057 | TNS=-0.267 | WHS=0.010 | THS=0.000 |
+Phase 12 Physical Synthesis in Router | Checksum: 180e52e68
+
+Time (s): cpu = 00:04:56 ; elapsed = 00:02:25 . Memory (MB): peak = 5439.352 ; gain = 446.184
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 13ba905d3
+
+Time (s): cpu = 00:04:57 ; elapsed = 00:02:26 . Memory (MB): peak = 5439.352 ; gain = 446.184
+Ending Routing Task | Checksum: 13ba905d3
+
+Time (s): cpu = 00:04:58 ; elapsed = 00:02:27 . Memory (MB): peak = 5439.352 ; gain = 446.184
+INFO: [Common 17-83] Releasing license: Implementation
+195 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:07 ; elapsed = 00:02:31 . Memory (MB): peak = 5439.352 ; gain = 446.184
+INFO: [runtcl-4] Executing : report_drc -file fpga_drc_routed.rpt -pb fpga_drc_routed.pb -rpx fpga_drc_routed.rpx
+Command: report_drc -file fpga_drc_routed.rpt -pb fpga_drc_routed.pb -rpx fpga_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5439.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
+Command: report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:37 ; elapsed = 00:00:20 . Memory (MB): peak = 5439.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
+Command: report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+219 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 5439.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file fpga_route_status.rpt -pb fpga_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file fpga_timing_summary_routed.rpt -pb fpga_timing_summary_routed.pb -rpx fpga_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file fpga_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file fpga_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file fpga_bus_skew_routed.rpt -pb fpga_bus_skew_routed.pb -rpx fpga_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.191 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.785 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 5439.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 5439.352 ; gain = 0.000
+Command: write_bitstream -force fpga.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A2)+(A3*(~A2)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A2)+(A3*(~A2)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 25 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i... and (the first 15 of 23 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 74958944 bits.
+Writing bitstream ./fpga.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:34 ; elapsed = 00:01:16 . Memory (MB): peak = 5627.199 ; gain = 187.848
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 10:30:32 2026...

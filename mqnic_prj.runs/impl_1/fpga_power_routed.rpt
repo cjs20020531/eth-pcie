@@ -1,0 +1,223 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date             : Mon Sep  7 10:29:00 2026
+| Host             : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command          : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
+| Design           : fpga
+| Device           : xczu7ev-ffvc1156-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 3.389        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.742        |
+| Device Static (W)        | 0.647        |
+| Effective TJA (C/W)      | 1.0          |
+| Max Ambient (C)          | 96.7         |
+| Junction Temperature (C) | 28.3         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.232 |       28 |       --- |             --- |
+| CLB Logic                |     0.278 |    69410 |       --- |             --- |
+|   LUT as Logic           |     0.152 |    20763 |    230400 |            9.01 |
+|   LUT as Distributed RAM |     0.100 |     5107 |    101760 |            5.02 |
+|   Register               |     0.019 |    33555 |    460800 |            7.28 |
+|   CARRY8                 |     0.006 |      618 |     28800 |            2.15 |
+|   LUT as Shift Register  |     0.002 |      214 |    101760 |            0.21 |
+|   BUFG                   |    <0.001 |        1 |        64 |            1.56 |
+|   Others                 |     0.000 |     1271 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      526 |    230400 |            0.23 |
+| Signals                  |     0.326 |    58391 |       --- |             --- |
+| Block RAM                |     0.383 |    125.5 |       312 |           40.22 |
+| URAM                     |     0.126 |       17 |        96 |           17.71 |
+| MMCM                     |     0.088 |        0 |       --- |             --- |
+| I/O                      |     0.018 |       43 |       360 |           11.94 |
+| GTH                      |     1.133 |        5 |        20 |           25.00 |
+| Hard IPs                 |     0.157 |        1 |       --- |             --- |
+|   PCIE                   |     0.157 |        1 |       --- |             --- |
+| Static Power             |     0.647 |          |           |                 |
+| Total                    |     3.389 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint          |       0.850 |     2.058 |       1.904 |      0.154 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     0.073 |       0.002 |      0.071 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.051 |       0.048 |      0.002 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.196 |       0.049 |      0.147 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     0.064 |       0.009 |      0.055 |       NA    | Unspecified | NA         |
+| Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.005 |       0.000 |      0.005 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSDDR_504  |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSDDR_PLL   |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO1_501  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO2_502  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCCINT_VCU      |       0.900 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
+| MGTAVcc         |       0.900 |     0.307 |       0.296 |      0.011 |       NA    | Unspecified | NA         |
+| MGTAVtt         |       1.200 |     0.596 |       0.573 |      0.023 |       NA    | Unspecified | NA         |
+| MGTVccaux       |       1.800 |     0.012 |       0.012 |      0.000 |       NA    | Unspecified | NA         |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.5                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                                                                                                                                                                                                                                                                                     | Domain                                                                                                                                                                                                                                                                                                                                                                                                     | Constraint (ns) |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| GTHE4_CHANNEL_TXOUTCLK[0]                                                                                                                                                                                                                                                                                                                                                                                                 | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[0]                                                        |             2.0 |
+| GTHE4_CHANNEL_TXOUTCLK[1]                                                                                                                                                                                                                                                                                                                                                                                                 | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[1]                                                        |             2.0 |
+| GTHE4_CHANNEL_TXOUTCLK[2]                                                                                                                                                                                                                                                                                                                                                                                                 | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[2]                                                        |             2.0 |
+| GTHE4_CHANNEL_TXOUTCLK[3]                                                                                                                                                                                                                                                                                                                                                                                                 | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[3]                                                        |             2.0 |
+| clk_125mhz                                                                                                                                                                                                                                                                                                                                                                                                                | clk_125mhz_p                                                                                                                                                                                                                                                                                                                                                                                               |             8.0 |
+| clk_125mhz_mmcm_out                                                                                                                                                                                                                                                                                                                                                                                                       | clk_125mhz_mmcm_out                                                                                                                                                                                                                                                                                                                                                                                        |             8.0 |
+| clk_50mhz_mmcm_out                                                                                                                                                                                                                                                                                                                                                                                                        | clk_50mhz_mmcm_out                                                                                                                                                                                                                                                                                                                                                                                         |            20.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK                                                                                                                                                                                                                                                                                                                       | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                                                                                                                                                                                                                                                                                                                         |            50.0 |
+| gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O                                                | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/txoutclkmon                                                |            16.0 |
+| pcie4_uscale_plus_0_gt_top_i_n_31                                                                                                                                                                                                                                                                                                                                                                                         | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/PHY_MCAPCLK                                                                                                                                                                                                                                                                                             |             8.0 |
+| pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/txoutclkmon |             8.0 |
+| pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/txoutclkmon |             8.0 |
+| pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/txoutclkmon |             8.0 |
+| pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i/txoutclkmon |             8.0 |
+| pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O                                                                                                                                                                                                                                                                                                       | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_INTCLK                                                                                                                                                                                                                                                                                              |          1000.0 |
+| pcie_mgt_refclk                                                                                                                                                                                                                                                                                                                                                                                                           | pcie_mgt_refclk_p                                                                                                                                                                                                                                                                                                                                                                                          |            10.0 |
+| pcie_user_clk                                                                                                                                                                                                                                                                                                                                                                                                             | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/PHY_CORECLK                                                                                                                                                                                                                                                                                             |             4.0 |
+| pipe_clk                                                                                                                                                                                                                                                                                                                                                                                                                  | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/CLK_PCLK2_GT                                                                                                                                                                                                                                                                                            |             4.0 |
+| qpll0outclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outclk_out[0]                                                        |             0.2 |
+| qpll0outrefclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                     | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]                                                     |            10.0 |
+| qpll1outclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll1outclk_out[0]                                                        |             0.2 |
+| qpll1outrefclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                     | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll1outrefclk_out[0]                                                     |            10.0 |
+| rxoutclkpcs_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/rxoutclkpcs_out[0]                                                                                                              |            12.8 |
+| sfp_mgt_refclk_0                                                                                                                                                                                                                                                                                                                                                                                                          | sfp_mgt_refclk_0_p                                                                                                                                                                                                                                                                                                                                                                                         |             6.4 |
+| txoutclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                           | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/txoutclk_out[0]                                                                                                                 |             6.4 |
+| userclk_out                                                                                                                                                                                                                                                                                                                                                                                                               | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk                                                                                                                                                                                                                                                                                                                                                        |            12.8 |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------------+-----------+
+| Name                                         | Power (W) |
++----------------------------------------------+-----------+
+| fpga                                         |     2.742 |
+|   clk_125mhz_ibufg_inst                      |     0.003 |
+|   core_inst                                  |     1.094 |
+|     core_inst                                |     1.057 |
+|       core_pcie_inst                         |     0.967 |
+|       pcie_if_inst                           |     0.090 |
+|     eth_mac_inst                             |     0.036 |
+|       eth_mac_1g_inst                        |     0.003 |
+|       rx_fifo                                |     0.017 |
+|       tx_fifo                                |     0.016 |
+|   dbg_hub                                    |     0.003 |
+|     inst                                     |     0.003 |
+|       BSCANID.u_xsdbm_id                     |     0.003 |
+|   gig_ethernet_pcs_pma_0                     |     0.166 |
+|     inst                                     |     0.166 |
+|       core_clocking_i                        |     0.006 |
+|       pcs_pma_block_i                        |     0.161 |
+|   pcie4_uscale_plus_inst                     |     1.366 |
+|     inst                                     |     1.366 |
+|       pcie4_uscale_plus_0_gt_top_i           |     1.017 |
+|       pcie4_uscale_plus_0_pcie_4_0_pipe_inst |     0.348 |
+|   u_ila_0                                    |     0.012 |
+|     inst                                     |     0.012 |
+|       ila_core_inst                          |     0.012 |
++----------------------------------------------+-----------+
+
+

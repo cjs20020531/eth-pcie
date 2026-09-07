@@ -1,0 +1,407 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Sep  7 10:28:41 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
+| Design       : fpga
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 50
++-----------+------------------+-------------------------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                                         | Violations |
++-----------+------------------+-------------------------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                                      | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks                                               | 1          |
+| TIMING-54 | Critical Warning | Scoped false path, clock group or max delay datapath only constraint between clocks | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                                        | 15         |
+| SYNTH-15  | Warning          | Byte wide write enable not inferred                                                 | 4          |
+| XDCH-2    | Warning          | Same min and max delay values on IO port                                            | 28         |
++-----------+------------------+-------------------------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks txoutclk_out[0] and clk_125mhz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks clk_125mhz]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks txoutclk_out[0] and clk_125mhz are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks clk_125mhz]
+Related violations: <none>
+
+TIMING-54#1 Critical Warning
+Scoped false path, clock group or max delay datapath only constraint between clocks  
+A scoped Clock Group timing constraint is set between clocks pcie_mgt_refclk and pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 241 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_meta_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_out_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync1_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync2_reg/PRE
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/rst_in_meta_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_meta_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_out_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync1_reg/PRE,
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync2_reg/PRE
+gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_tx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE
+ (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/bufg_gt_coreclk_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[3].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r[4]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[0]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[1]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[2]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[3]/CLR
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[4]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_pcie_4_0_pipe_inst/sys_or_hot_rst_pclk_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/sys_or_hot_rst_pclk_inst/arststages_ff_reg[0]/PRE,
+pcie4_uscale_plus_inst/inst/sys_or_hot_rst_pclk_inst/arststages_ff_reg[1]/PRE,
+pcie4_uscale_plus_inst/inst/sys_or_hot_rst_uclk_inst/arststages_ff_reg[0]/PRE
+pcie4_uscale_plus_inst/inst/sys_or_hot_rst_uclk_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_pcie_4_0_pipe_inst/user_reset_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/user_reset_cdc/arststages_ff_reg[0]/PRE,
+pcie4_uscale_plus_inst/inst/user_reset_cdc/arststages_ff_reg[1]/PRE
+pcie4_uscale_plus_inst/inst/user_reset_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-15#1 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/queue_ram_reg_0_bram_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#2 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/queue_ram_reg_0_bram_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#3 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/queue_ram_reg_1_bram_0 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#4 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/queue_ram_reg_1_bram_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'btnc' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {btnu btnl btnd btnr btnc}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'btnd' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {btnu btnl btnd btnr btnc}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'btnl' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {btnu btnl btnd btnr btnc}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'btnr' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {btnu btnl btnd btnr btnc}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'btnu' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {btnu btnl btnd btnr btnc}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 45)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'i2c1_scl' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {i2c1_sda i2c1_scl}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 80)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'i2c1_sda' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {i2c1_sda i2c1_scl}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 80)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'pcie_reset_n' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports pcie_reset_n]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 131)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[4]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[5]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[6]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[7]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'i2c1_scl' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {i2c1_sda i2c1_scl}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 78)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'i2c1_sda' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {i2c1_sda i2c1_scl}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 78)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[3]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[4]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[5]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[6]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[7]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 29)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sfp0_tx_disable_b' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {sfp0_tx_disable_b sfp1_tx_disable_b}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 104)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'sfp1_tx_disable_b' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {sfp0_tx_disable_b sfp1_tx_disable_b}]
+D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc (Line: 104)
+Related violations: <none>
+
+

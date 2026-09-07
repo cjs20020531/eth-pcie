@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep  4 15:53:26 2026
+# Process ID: 15436
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16124 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set fs [get_filesets sources_1]
+puts "TOP = [get_property TOP $fs]"
+puts "Before = [get_property GENERIC $fs]"
+set updated_generics {}
+foreach item [get_property GENERIC $fs] {
+    if {![regexp {^IF_COUNT=} $item]} {
+        lappend updated_generics $item
+    }
+}
+lappend updated_generics IF_COUNT=1
+set_property GENERIC $updated_generics $fs
+puts "After = [get_property GENERIC $fs]"
+lappend updated_generics PTP_TS_ENABLE=0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+lappend updated_generics PTP_TS_ENABLE=0
+lappend updated_generics TDMA_BER_ENABLE=0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+lappend updated_generics TDMA_BER_ENABLE=0
+lappend updated_generics PTP_TS_ENABLE=0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+current_hw_device [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes phy_txd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'hXX [get_hw_probes phy_rxd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes phy_txd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq8'h00 [get_hw_probes phy_rxd -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+set_property TRIGGER_COMPARE_VALUE neq1'bX [get_hw_probes phy_tx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE neq1'b0 [get_hw_probes phy_tx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu7_0] -filter {CELL_NAME=~"u_ila_0"}]

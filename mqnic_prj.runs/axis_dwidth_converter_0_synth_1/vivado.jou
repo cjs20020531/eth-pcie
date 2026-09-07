@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep  4 11:41:35 2026
+# Process ID: 1388
+# Current directory: D:/FPGA/mqnic_prj/mqnic_prj.runs/axis_dwidth_converter_0_synth_1
+# Command line: vivado.exe -log axis_dwidth_converter_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_dwidth_converter_0.tcl
+# Log file: D:/FPGA/mqnic_prj/mqnic_prj.runs/axis_dwidth_converter_0_synth_1/axis_dwidth_converter_0.vds
+# Journal file: D:/FPGA/mqnic_prj/mqnic_prj.runs/axis_dwidth_converter_0_synth_1\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+source axis_dwidth_converter_0.tcl -notrace

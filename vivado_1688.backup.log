@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep  4 11:35:41 2026
+# Process ID: 1688
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9796 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+INFO: [Project 1-313] Project file moved from 'G:/Work/fzu_work/demo/mqnic_prj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2023_2/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'pcie4_uscale_plus_0' is locked:
+* IP definition 'UltraScale+ Integrated Block (PCIE4) for PCI Express (1.3)' for IP 'pcie4_uscale_plus_0' (customized with software release 2019.1) has a different revision in the IP Catalog. * IP 'pcie4_uscale_plus_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'eth_xcvr_gth_full' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'eth_xcvr_gth_full' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'eth_xcvr_gth_channel' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'eth_xcvr_gth_channel' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_1' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_1' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'gig_ethernet_pcs_pma_0' (customized with software release 2019.1) has a newer minor version in the IP Catalog. * IP 'gig_ethernet_pcs_pma_0' contains one or more locked subcores.
+INFO: [Project 1-230] Project 'mqnic_prj.xpr' upgraded for this version of Vivado.
+upgrade_project -migrate_output_products
+WARNING: [IP_Flow 19-2162] IP 'pcie4_uscale_plus_0_gt' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'pcie4_uscale_plus_0_gt' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'pcie4_uscale_plus_0' is locked:
+* IP definition 'UltraScale+ Integrated Block (PCIE4) for PCI Express (1.3)' for IP 'pcie4_uscale_plus_0' (customized with software release 2019.1) has a different revision in the IP Catalog. * IP 'pcie4_uscale_plus_0' contains one or more locked subcores.
+INFO: [Coretcl 2-1816] Migrated 'pcie4_uscale_plus_0.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/pcie4_uscale_plus_0'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0'.
+WARNING: [IP_Flow 19-2162] IP 'eth_xcvr_gth_full' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'eth_xcvr_gth_full' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'eth_xcvr_gth_full.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/eth_xcvr_gth_full'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/eth_xcvr_gth_full'.
+WARNING: [IP_Flow 19-2162] IP 'eth_xcvr_gth_channel' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'eth_xcvr_gth_channel' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'eth_xcvr_gth_channel.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/eth_xcvr_gth_channel'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/eth_xcvr_gth_channel'.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_0' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_0' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'axis_dwidth_converter_0.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/axis_dwidth_converter_0'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/axis_dwidth_converter_0'.
+WARNING: [IP_Flow 19-2162] IP 'axis_dwidth_converter_1' is locked:
+* IP definition 'AXI4-Stream Data Width Converter (1.1)' for IP 'axis_dwidth_converter_1' (customized with software release 2019.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'axis_dwidth_converter_1.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/axis_dwidth_converter_1'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/axis_dwidth_converter_1'.
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0_gt' is locked:
+* IP definition 'UltraScale FPGAs Transceivers Wizard (1.7)' for IP 'gig_ethernet_pcs_pma_0_gt' (customized with software release 2019.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'gig_ethernet_pcs_pma_0' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'gig_ethernet_pcs_pma_0' (customized with software release 2019.1) has a newer minor version in the IP Catalog. * IP 'gig_ethernet_pcs_pma_0' contains one or more locked subcores.
+INFO: [Coretcl 2-1816] Migrated 'gig_ethernet_pcs_pma_0.xci'
+  Source files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/gig_ethernet_pcs_pma_0'
+  Output files are located in 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0'.
+update_compile_order -fileset sources_1
+upgrade_ip -srcset pcie4_uscale_plus_0 -vlnv xilinx.com:ip:pcie4_uscale_plus:1.3 [get_ips  pcie4_uscale_plus_0] -log ip_upgrade.log
+Upgrading 'pcie4_uscale_plus_0'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.xci' from fileset 'pcie4_uscale_plus_0' to fileset 'sources_1'.
+expected boolean value but got "WARNING: upgrade cannot get value of parameter bro"
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+xit::create_sub_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2657.355 ; gain = 1126.727
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF0_CLASS_CODE' from '058000' to '020000' has been ignored for IP 'pcie4_uscale_plus_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'type1_prefetchable_membase_memlimit' from 'Disabled' to '64bit_Enabled' has been ignored for IP 'pcie4_uscale_plus_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'type1_membase_memlimit_enable' from 'Disabled' to 'Enabled' has been ignored for IP 'pcie4_uscale_plus_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF3_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF1_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF2_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+INFO: [IP_Flow 19-3422] Upgraded pcie4_uscale_plus_0 (UltraScale+ Integrated Block (PCIE4) for PCI Express 1.3) from revision 5 to revision 23
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie4_uscale_plus_0'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'pcie4_uscale_plus_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/FPGA/mqnic_prj/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2657.355 ; gain = 1153.613
+export_ip_user_files -of_objects [get_ips pcie4_uscale_plus_0] -no_script -sync -force -quiet
+upgrade_ip -srcset gig_ethernet_pcs_pma_0 -vlnv xilinx.com:ip:gig_ethernet_pcs_pma:16.2 [get_ips  gig_ethernet_pcs_pma_0] -log ip_upgrade.log
+Upgrading 'gig_ethernet_pcs_pma_0'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci' from fileset 'gig_ethernet_pcs_pma_0' to fileset 'sources_1'.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xczu7ev-ffvc1156-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xczu7ev-ffvc1156-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : zynquplus
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xczu7ev-ffvc1156-2-e
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -2
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
+Sourcing the elaborate.xit file.
+Calling update_contents for BASEX .
+Done sourcing the elaborate.xit file.
+INFO: [IP_Flow 19-1972] Upgraded gig_ethernet_pcs_pma_0 from 1G/2.5G Ethernet PCS/PMA or SGMII 16.1 to 1G/2.5G Ethernet PCS/PMA or SGMII 16.2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2672.055 ; gain = 14.699
+export_ip_user_files -of_objects [get_ips gig_ethernet_pcs_pma_0] -no_script -sync -force -quiet
+upgrade_ip -srcset axis_dwidth_converter_0 -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 [get_ips  axis_dwidth_converter_0] -log ip_upgrade.log
+Upgrading 'axis_dwidth_converter_0'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/axis_dwidth_converter_0/axis_dwidth_converter_0.xci' from fileset 'axis_dwidth_converter_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded axis_dwidth_converter_0 (AXI4-Stream Data Width Converter 1.1) from revision 18 to revision 28
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_dwidth_converter_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips axis_dwidth_converter_0] -no_script -sync -force -quiet
+upgrade_ip -srcset axis_dwidth_converter_1 -vlnv xilinx.com:ip:axis_dwidth_converter:1.1 [get_ips  axis_dwidth_converter_1] -log ip_upgrade.log
+Upgrading 'axis_dwidth_converter_1'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/axis_dwidth_converter_1/axis_dwidth_converter_1.xci' from fileset 'axis_dwidth_converter_1' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded axis_dwidth_converter_1 (AXI4-Stream Data Width Converter 1.1) from revision 18 to revision 28
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_dwidth_converter_1'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips axis_dwidth_converter_1] -no_script -sync -force -quiet
+upgrade_ip -srcset eth_xcvr_gth_channel -vlnv xilinx.com:ip:gtwizard_ultrascale:1.7 [get_ips  eth_xcvr_gth_channel] -log ip_upgrade.log
+Upgrading 'eth_xcvr_gth_channel'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/eth_xcvr_gth_channel/eth_xcvr_gth_channel.xci' from fileset 'eth_xcvr_gth_channel' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded eth_xcvr_gth_channel (UltraScale FPGAs Transceivers Wizard 1.7) from revision 6 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'eth_xcvr_gth_channel'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2681.750 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips eth_xcvr_gth_channel] -no_script -sync -force -quiet
+upgrade_ip -srcset eth_xcvr_gth_full -vlnv xilinx.com:ip:gtwizard_ultrascale:1.7 [get_ips  eth_xcvr_gth_full] -log ip_upgrade.log
+Upgrading 'eth_xcvr_gth_full'
+INFO: [Project 1-386] Moving file 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/eth_xcvr_gth_full/eth_xcvr_gth_full.xci' from fileset 'eth_xcvr_gth_full' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded eth_xcvr_gth_full (UltraScale FPGAs Transceivers Wizard 1.7) from revision 6 to revision 17
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'eth_xcvr_gth_full'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/FPGA/mqnic_prj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2697.410 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips eth_xcvr_gth_full] -no_script -sync -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_dwidth_converter_1'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axis_dwidth_converter_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_dwidth_converter_0'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axis_dwidth_converter_0
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gig_ethernet_pcs_pma_0'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_0
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie4_uscale_plus_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'pcie4_uscale_plus_0'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pcie4_uscale_plus_0
+[Fri Sep  4 11:41:33 2026] Launched axis_dwidth_converter_0_synth_1, gig_ethernet_pcs_pma_0_synth_1, axis_dwidth_converter_1_synth_1, pcie4_uscale_plus_0_synth_1, synth_1...
+Run output will be captured here:
+axis_dwidth_converter_0_synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/axis_dwidth_converter_0_synth_1/runme.log
+gig_ethernet_pcs_pma_0_synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/gig_ethernet_pcs_pma_0_synth_1/runme.log
+axis_dwidth_converter_1_synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/axis_dwidth_converter_1_synth_1/runme.log
+pcie4_uscale_plus_0_synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/pcie4_uscale_plus_0_synth_1/runme.log
+synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Fri Sep  4 11:41:33 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2697.410 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list \
+  CONFIG.C_DATA_DEPTH {4096} \
+  CONFIG.C_NUM_OF_PROBES {8} \
+  CONFIG.C_PROBE5_WIDTH {7} \
+  CONFIG.C_PROBE7_WIDTH {7} \
+] [get_ips ila_0]
+generate_target {instantiation_template} [get_files d:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+generate_target all [get_files  d:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list \
+  CONFIG.C_PROBE5_WIDTH {8} \
+  CONFIG.C_PROBE7_WIDTH {8} \
+] [get_ips ila_0]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+generate_target all [get_files  d:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
+export_ip_user_files -of_objects [get_files d:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+INFO: [Vivado 12-23855] The given sub-design is auto disabled, no action will be taken: 'd:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci'
+export_simulation -of_objects [get_files d:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/FPGA/mqnic_prj/mqnic_prj.ip_user_files/sim_scripts -ip_user_files_dir D:/FPGA/mqnic_prj/mqnic_prj.ip_user_files -ipstatic_source_dir D:/FPGA/mqnic_prj/mqnic_prj.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/FPGA/mqnic_prj/mqnic_prj.cache/compile_simlib/modelsim} {questa=D:/FPGA/mqnic_prj/mqnic_prj.cache/compile_simlib/questa} {riviera=D:/FPGA/mqnic_prj/mqnic_prj.cache/compile_simlib/riviera} {activehdl=D:/FPGA/mqnic_prj/mqnic_prj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ila_0
+[Fri Sep  4 15:37:49 2026] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/ila_0_synth_1/runme.log
+synth_1: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+[Fri Sep  4 15:37:49 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]

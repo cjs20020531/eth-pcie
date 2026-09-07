@@ -1,0 +1,849 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:41:14 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'eth_xcvr_gth_full'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of eth_xcvr_gth_full (xilinx.com:ip:gtwizard_ultrascale:1.7) from (Rev. 6) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:41:04 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'eth_xcvr_gth_channel'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of eth_xcvr_gth_channel (xilinx.com:ip:gtwizard_ultrascale:1.7) from (Rev. 6) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:40:54 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_dwidth_converter_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of axis_dwidth_converter_1 (xilinx.com:ip:axis_dwidth_converter:1.1) from (Rev. 18) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:40:47 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_dwidth_converter_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of axis_dwidth_converter_0 (xilinx.com:ip:axis_dwidth_converter:1.1) from (Rev. 18) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:40:37 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'gig_ethernet_pcs_pma_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of gig_ethernet_pcs_pma_0 from xilinx.com:ip:gig_ethernet_pcs_pma:16.1 (Rev. 6) to xilinx.com:ip:gig_ethernet_pcs_pma:16.2 (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep  4 11:37:00 2026
+| Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pcie4_uscale_plus_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of pcie4_uscale_plus_0 (xilinx.com:ip:pcie4_uscale_plus:1.3) from (Rev. 5) to (Rev. 23)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Failed to execute command 'namespace eval ::ipgen_pcie4_uscale_plus_v1_3_utils {::xcoUpgradeLib::upgradeXCI pcie4_uscale_plus_v1_3 pcie4_uscale_plus_v1_3 ::ipgen_pcie4_uscale_plus_v1_3_utils ::xcoUpgradeLib::xciArray}' :
+	expected boolean value but got "WARNING: upgrade cannot get value of parameter bro"
+WARNING: upgrade cannot get value of parameter broadcom_sbr_wa : there is no parameter called broadcom_sbr_wa in pcie4_uscale_plus_v1_3
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'PF0_CLASS_CODE' from '058000' to '020000' has been ignored for IP 'pcie4_uscale_plus_0'
+
+An attempt to modify the value of disabled parameter 'type1_prefetchable_membase_memlimit' from 'Disabled' to '64bit_Enabled' has been ignored for IP 'pcie4_uscale_plus_0'
+
+An attempt to modify the value of disabled parameter 'type1_membase_memlimit_enable' from 'Disabled' to 'Enabled' has been ignored for IP 'pcie4_uscale_plus_0'
+
+An attempt to modify the value of disabled parameter 'PF3_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+
+An attempt to modify the value of disabled parameter 'PF1_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+
+An attempt to modify the value of disabled parameter 'PF2_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie4_uscale_plus_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:pcie4_uscale_plus:1.3 -user_name pcie4_uscale_plus_0
+set_property -dict "\
+  CONFIG.AXISTEN_IF_CQ_ALIGNMENT_MODE {DWORD_Aligned} \
+  CONFIG.AXISTEN_IF_EXT_512_CC_STRADDLE {false} \
+  CONFIG.AXISTEN_IF_EXT_512_CQ_STRADDLE {false} \
+  CONFIG.AXISTEN_IF_EXT_512_RC_4TLP_STRADDLE {false} \
+  CONFIG.AXISTEN_IF_EXT_512_RC_STRADDLE {true} \
+  CONFIG.AXISTEN_IF_EXT_512_RQ_STRADDLE {false} \
+  CONFIG.AXISTEN_IF_RC_STRADDLE {false} \
+  CONFIG.AXISTEN_IF_RQ_ALIGNMENT_MODE {DWORD_Aligned} \
+  CONFIG.CLK.sys_clk.ASSOCIATED_BUSIF {} \
+  CONFIG.CLK.sys_clk.ASSOCIATED_RESET {} \
+  CONFIG.CLK.sys_clk.CLK_DOMAIN {} \
+  CONFIG.CLK.sys_clk.FREQ_HZ {100000000} \
+  CONFIG.CLK.sys_clk.INSERT_VIP {0} \
+  CONFIG.CLK.sys_clk.PHASE {0.000} \
+  CONFIG.CLK.sys_clk_gt.ASSOCIATED_BUSIF {} \
+  CONFIG.CLK.sys_clk_gt.ASSOCIATED_RESET {} \
+  CONFIG.CLK.sys_clk_gt.CLK_DOMAIN {} \
+  CONFIG.CLK.sys_clk_gt.FREQ_HZ {100000000} \
+  CONFIG.CLK.sys_clk_gt.INSERT_VIP {0} \
+  CONFIG.CLK.sys_clk_gt.PHASE {0.000} \
+  CONFIG.CLK.user_clk.ASSOCIATED_BUSIF {m_axis_cq:s_axis_cc:s_axis_rq:m_axis_rc} \
+  CONFIG.CLK.user_clk.ASSOCIATED_RESET {user_reset} \
+  CONFIG.CLK.user_clk.CLK_DOMAIN {} \
+  CONFIG.CLK.user_clk.FREQ_HZ {125000000} \
+  CONFIG.CLK.user_clk.INSERT_VIP {0} \
+  CONFIG.CLK.user_clk.PHASE {0.000} \
+  CONFIG.Component_Name {pcie4_uscale_plus_0} \
+  CONFIG.INS_LOSS_NYQ {15} \
+  CONFIG.MSI_X_OPTIONS {MSI-X_External} \
+  CONFIG.PCIE_BOARD_INTERFACE {Custom} \
+  CONFIG.PF0_AER_CAP_ECRC_GEN_AND_CHECK_CAPABLE {false} \
+  CONFIG.PF0_CLASS_CODE {020000} \
+  CONFIG.PF0_DEVICE_ID {1001} \
+  CONFIG.PF0_DEV_CAP2_128B_CAS_ATOMIC_COMPLETER_SUPPORT {false} \
+  CONFIG.PF0_DEV_CAP2_32B_ATOMIC_COMPLETER_SUPPORT {false} \
+  CONFIG.PF0_DEV_CAP2_64B_ATOMIC_COMPLETER_SUPPORT {false} \
+  CONFIG.PF0_DEV_CAP2_TPH_COMPLETER_SUPPORT {false} \
+  CONFIG.PF0_DEV_CAP_FUNCTION_LEVEL_RESET_CAPABLE {false} \
+  CONFIG.PF0_INTERRUPT_PIN {NONE} \
+  CONFIG.PF0_LINK_STATUS_SLOT_CLOCK_CONFIG {true} \
+  CONFIG.PF0_MSIX_CAP_PBA_BIR {BAR_1:0} \
+  CONFIG.PF0_MSIX_CAP_PBA_OFFSET {00018000} \
+  CONFIG.PF0_MSIX_CAP_TABLE_BIR {BAR_1:0} \
+  CONFIG.PF0_MSIX_CAP_TABLE_OFFSET {00010000} \
+  CONFIG.PF0_MSIX_CAP_TABLE_SIZE {03f} \
+  CONFIG.PF0_MSI_CAP_MULTIMSGCAP {1_vector} \
+  CONFIG.PF0_PM_CAP_PMESUPPORT_D0 {false} \
+  CONFIG.PF0_PM_CAP_PMESUPPORT_D1 {false} \
+  CONFIG.PF0_PM_CAP_PMESUPPORT_D3HOT {false} \
+  CONFIG.PF0_PM_CAP_SUPP_D1_STATE {false} \
+  CONFIG.PF0_REVISION_ID {00} \
+  CONFIG.PF0_SRIOV_CAP_INITIAL_VF {0} \
+  CONFIG.PF0_SRIOV_FIRST_VF_OFFSET {0} \
+  CONFIG.PF0_SRIOV_FUNC_DEP_LINK {0000} \
+  CONFIG.PF0_SRIOV_SUPPORTED_PAGE_SIZE {00000553} \
+  CONFIG.PF0_SRIOV_VF_DEVICE_ID {0000} \
+  CONFIG.PF0_SUBSYSTEM_ID {906a} \
+  CONFIG.PF0_SUBSYSTEM_VENDOR_ID {10ee} \
+  CONFIG.PF0_Use_Class_Code_Lookup_Assistant {false} \
+  CONFIG.PF1_CLASS_CODE {058000} \
+  CONFIG.PF1_DEVICE_ID {9011} \
+  CONFIG.PF1_INTERRUPT_PIN {NONE} \
+  CONFIG.PF1_MSIX_CAP_PBA_BIR {BAR_1:0} \
+  CONFIG.PF1_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.PF1_MSIX_CAP_TABLE_BIR {BAR_1:0} \
+  CONFIG.PF1_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.PF1_MSIX_CAP_TABLE_SIZE {000} \
+  CONFIG.PF1_MSI_CAP_MULTIMSGCAP {1_vector} \
+  CONFIG.PF1_REVISION_ID {00} \
+  CONFIG.PF1_SRIOV_CAP_INITIAL_VF {0} \
+  CONFIG.PF1_SRIOV_CAP_VER {1} \
+  CONFIG.PF1_SRIOV_FIRST_VF_OFFSET {0} \
+  CONFIG.PF1_SRIOV_FUNC_DEP_LINK {0001} \
+  CONFIG.PF1_SRIOV_SUPPORTED_PAGE_SIZE {00000553} \
+  CONFIG.PF1_SRIOV_VF_DEVICE_ID {0000} \
+  CONFIG.PF1_SUBSYSTEM_ID {0007} \
+  CONFIG.PF1_SUBSYSTEM_VENDOR_ID {10ee} \
+  CONFIG.PF1_Use_Class_Code_Lookup_Assistant {false} \
+  CONFIG.PF2_CLASS_CODE {058000} \
+  CONFIG.PF2_DEVICE_ID {9434} \
+  CONFIG.PF2_INTERRUPT_PIN {NONE} \
+  CONFIG.PF2_MSIX_CAP_PBA_BIR {BAR_1:0} \
+  CONFIG.PF2_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.PF2_MSIX_CAP_TABLE_BIR {BAR_1:0} \
+  CONFIG.PF2_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.PF2_MSIX_CAP_TABLE_SIZE {000} \
+  CONFIG.PF2_MSI_CAP_MULTIMSGCAP {1_vector} \
+  CONFIG.PF2_REVISION_ID {00} \
+  CONFIG.PF2_SRIOV_CAP_INITIAL_VF {0} \
+  CONFIG.PF2_SRIOV_CAP_VER {1} \
+  CONFIG.PF2_SRIOV_FIRST_VF_OFFSET {0} \
+  CONFIG.PF2_SRIOV_FUNC_DEP_LINK {0002} \
+  CONFIG.PF2_SRIOV_SUPPORTED_PAGE_SIZE {00000553} \
+  CONFIG.PF2_SRIOV_VF_DEVICE_ID {0000} \
+  CONFIG.PF2_SUBSYSTEM_ID {0007} \
+  CONFIG.PF2_SUBSYSTEM_VENDOR_ID {10ee} \
+  CONFIG.PF2_Use_Class_Code_Lookup_Assistant {false} \
+  CONFIG.PF3_CLASS_CODE {058000} \
+  CONFIG.PF3_DEVICE_ID {9634} \
+  CONFIG.PF3_INTERRUPT_PIN {NONE} \
+  CONFIG.PF3_MSIX_CAP_PBA_BIR {BAR_1:0} \
+  CONFIG.PF3_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.PF3_MSIX_CAP_TABLE_BIR {BAR_1:0} \
+  CONFIG.PF3_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.PF3_MSIX_CAP_TABLE_SIZE {000} \
+  CONFIG.PF3_MSI_CAP_MULTIMSGCAP {1_vector} \
+  CONFIG.PF3_REVISION_ID {00} \
+  CONFIG.PF3_SRIOV_CAP_INITIAL_VF {0} \
+  CONFIG.PF3_SRIOV_CAP_VER {1} \
+  CONFIG.PF3_SRIOV_FIRST_VF_OFFSET {0} \
+  CONFIG.PF3_SRIOV_FUNC_DEP_LINK {0003} \
+  CONFIG.PF3_SRIOV_SUPPORTED_PAGE_SIZE {00000553} \
+  CONFIG.PF3_SRIOV_VF_DEVICE_ID {0000} \
+  CONFIG.PF3_SUBSYSTEM_ID {0007} \
+  CONFIG.PF3_SUBSYSTEM_VENDOR_ID {10ee} \
+  CONFIG.PF3_Use_Class_Code_Lookup_Assistant {false} \
+  CONFIG.PHY_LP_TXPRESET {4} \
+  CONFIG.PL_DISABLE_LANE_REVERSAL {true} \
+  CONFIG.PL_LINK_CAP_MAX_LINK_SPEED {8.0_GT/s} \
+  CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH {X4} \
+  CONFIG.REF_CLK_FREQ {100_MHz} \
+  CONFIG.RST.sys_rst.BOARD.ASSOCIATED_PARAM {SYS_RST_N_BOARD_INTERFACE} \
+  CONFIG.RST.sys_rst.INSERT_VIP {0} \
+  CONFIG.RST.sys_rst.POLARITY {ACTIVE_LOW} \
+  CONFIG.RST.sys_rst.TYPE {PCIE_PERST} \
+  CONFIG.RST.user_reset.INSERT_VIP {0} \
+  CONFIG.RST.user_reset.POLARITY {ACTIVE_HIGH} \
+  CONFIG.RX_PPM_OFFSET {0} \
+  CONFIG.RX_SSC_PPM {0} \
+  CONFIG.SRIOV_CAP_ENABLE {false} \
+  CONFIG.SRIOV_CAP_ENABLE_EXT {false} \
+  CONFIG.SRIOV_FIRST_VF_OFFSET {1} \
+  CONFIG.SYS_RST_N_BOARD_INTERFACE {Custom} \
+  CONFIG.Shared_Logic {1} \
+  CONFIG.TL_PF_ENABLE_REG {1} \
+  CONFIG.VFG0_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.VFG0_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.VFG0_MSIX_CAP_TABLE_SIZE {0} \
+  CONFIG.VFG1_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.VFG1_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.VFG1_MSIX_CAP_TABLE_SIZE {0} \
+  CONFIG.VFG2_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.VFG2_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.VFG2_MSIX_CAP_TABLE_SIZE {0} \
+  CONFIG.VFG3_MSIX_CAP_PBA_OFFSET {00000000} \
+  CONFIG.VFG3_MSIX_CAP_TABLE_OFFSET {00000000} \
+  CONFIG.VFG3_MSIX_CAP_TABLE_SIZE {0} \
+  CONFIG.acs_ext_cap_enable {false} \
+  CONFIG.alignment_mode_256b {DWORD_Aligned} \
+  CONFIG.aspm_support {No_ASPM} \
+  CONFIG.aws_mode_value {0} \
+  CONFIG.axisten_freq {250} \
+  CONFIG.axisten_if_enable_client_tag {true} \
+  CONFIG.axisten_if_enable_msg_route {00000} \
+  CONFIG.axisten_if_enable_msg_route_override {false} \
+  CONFIG.axisten_if_enable_rx_msg_intfc {false} \
+  CONFIG.axisten_if_width {128_bit} \
+  CONFIG.bmd_pio_mode {false} \
+  CONFIG.cfg_ctl_if {true} \
+  CONFIG.cfg_ext_if {true} \
+  CONFIG.cfg_fc_if {true} \
+  CONFIG.cfg_mgmt_if {true} \
+  CONFIG.cfg_pm_if {true} \
+  CONFIG.cfg_status_if {true} \
+  CONFIG.cfg_tx_msg_if {true} \
+  CONFIG.completer_model {false} \
+  CONFIG.copy_pf0 {true} \
+  CONFIG.copy_sriov_pf0 {true} \
+  CONFIG.coreclk_freq {250} \
+  CONFIG.ctrl_skip_mask {true} \
+  CONFIG.dbg_checker {false} \
+  CONFIG.dedicate_perst {false} \
+  CONFIG.device_port_type {PCI_Express_Endpoint_device} \
+  CONFIG.dis_gt_wizard {false} \
+  CONFIG.disable_bram_pipeline {false} \
+  CONFIG.disable_eq_synchronizer {false} \
+  CONFIG.disable_gt_loc {false} \
+  CONFIG.dma_2rp {false} \
+  CONFIG.en_dbg_descramble {false} \
+  CONFIG.en_ext_ch_gt_drp {false} \
+  CONFIG.en_ext_clk {true} \
+  CONFIG.en_gt_selection {false} \
+  CONFIG.en_l23_entry {false} \
+  CONFIG.en_msi_per_vec_masking {false} \
+  CONFIG.en_parity {false} \
+  CONFIG.en_pcie_conf {false} \
+  CONFIG.en_pcie_drp {false} \
+  CONFIG.en_pl_ifc {false} \
+  CONFIG.en_transceiver_status_ports {false} \
+  CONFIG.enable_auto_rxeq {False} \
+  CONFIG.enable_clkmux {false} \
+  CONFIG.enable_code {0000} \
+  CONFIG.enable_gen4 {false} \
+  CONFIG.enable_ibert {false} \
+  CONFIG.enable_jtag_dbg {false} \
+  CONFIG.enable_mark_debug {false} \
+  CONFIG.enable_more_clk {false} \
+  CONFIG.enable_multi_pcie {false} \
+  CONFIG.enable_multipf_aer {false} \
+  CONFIG.ext_pcie_cfg_space_enabled {false} \
+  CONFIG.ext_startup_primitive {false} \
+  CONFIG.ext_sys_clk_bufg {false} \
+  CONFIG.ext_xvc_vsec_enable {false} \
+  CONFIG.extended_tag_field {true} \
+  CONFIG.free_run_freq {100_MHz} \
+  CONFIG.gen4_eieos_0s7 {true} \
+  CONFIG.gen_x0y0 {true} \
+  CONFIG.gen_x0y1 {false} \
+  CONFIG.gen_x0y2 {false} \
+  CONFIG.gen_x0y3 {false} \
+  CONFIG.gen_x0y4 {false} \
+  CONFIG.gen_x0y5 {false} \
+  CONFIG.gen_x1y0 {false} \
+  CONFIG.gen_x1y1 {false} \
+  CONFIG.gen_x1y2 {false} \
+  CONFIG.gen_x1y3 {false} \
+  CONFIG.gen_x1y4 {false} \
+  CONFIG.gen_x1y5 {false} \
+  CONFIG.gt_drp_clk_src {Internal} \
+  CONFIG.gtcom_in_core {2} \
+  CONFIG.gtwiz_in_core {1} \
+  CONFIG.ins_loss_profile {Add-in_Card} \
+  CONFIG.legacy_ext_pcie_cfg_space_enabled {false} \
+  CONFIG.local_test {false} \
+  CONFIG.m_axis_cq.CLK_DOMAIN {} \
+  CONFIG.m_axis_cq.FREQ_HZ {100000000} \
+  CONFIG.m_axis_cq.HAS_TKEEP {1} \
+  CONFIG.m_axis_cq.HAS_TLAST {1} \
+  CONFIG.m_axis_cq.HAS_TREADY {1} \
+  CONFIG.m_axis_cq.HAS_TSTRB {0} \
+  CONFIG.m_axis_cq.INSERT_VIP {0} \
+  CONFIG.m_axis_cq.LAYERED_METADATA {undef} \
+  CONFIG.m_axis_cq.PHASE {0.000} \
+  CONFIG.m_axis_cq.TDATA_NUM_BYTES {16} \
+  CONFIG.m_axis_cq.TDEST_WIDTH {0} \
+  CONFIG.m_axis_cq.TID_WIDTH {0} \
+  CONFIG.m_axis_cq.TUSER_WIDTH {88} \
+  CONFIG.m_axis_rc.CLK_DOMAIN {} \
+  CONFIG.m_axis_rc.FREQ_HZ {100000000} \
+  CONFIG.m_axis_rc.HAS_TKEEP {1} \
+  CONFIG.m_axis_rc.HAS_TLAST {1} \
+  CONFIG.m_axis_rc.HAS_TREADY {1} \
+  CONFIG.m_axis_rc.HAS_TSTRB {0} \
+  CONFIG.m_axis_rc.INSERT_VIP {0} \
+  CONFIG.m_axis_rc.LAYERED_METADATA {undef} \
+  CONFIG.m_axis_rc.PHASE {0.000} \
+  CONFIG.m_axis_rc.TDATA_NUM_BYTES {16} \
+  CONFIG.m_axis_rc.TDEST_WIDTH {0} \
+  CONFIG.m_axis_rc.TID_WIDTH {0} \
+  CONFIG.m_axis_rc.TUSER_WIDTH {75} \
+  CONFIG.master_cal_only {false} \
+  CONFIG.mcap_enablement {None} \
+  CONFIG.mcap_fpga_bitstream_version {00000000} \
+  CONFIG.mode_selection {Advanced} \
+  CONFIG.msix_type {HARD} \
+  CONFIG.mult_pf_des {true} \
+  CONFIG.pcie4_mgt.BOARD.ASSOCIATED_PARAM {PCIE_BOARD_INTERFACE} \
+  CONFIG.pcie_blk_locn {X0Y0} \
+  CONFIG.pcie_id_if {false} \
+  CONFIG.per_func_status_if {true} \
+  CONFIG.perf_level {Extreme} \
+  CONFIG.pf0_aer_enabled {true} \
+  CONFIG.pf0_ari_enabled {false} \
+  CONFIG.pf0_bar0_64bit {true} \
+  CONFIG.pf0_bar0_enabled {true} \
+  CONFIG.pf0_bar0_index {0} \
+  CONFIG.pf0_bar0_prefetchable {true} \
+  CONFIG.pf0_bar0_scale {Megabytes} \
+  CONFIG.pf0_bar0_size {16} \
+  CONFIG.pf0_bar0_type {Memory} \
+  CONFIG.pf0_bar1_64bit {false} \
+  CONFIG.pf0_bar1_enabled {false} \
+  CONFIG.pf0_bar1_index {7} \
+  CONFIG.pf0_bar1_prefetchable {false} \
+  CONFIG.pf0_bar1_scale {Kilobytes} \
+  CONFIG.pf0_bar1_size {128} \
+  CONFIG.pf0_bar1_type {N/A} \
+  CONFIG.pf0_bar2_64bit {false} \
+  CONFIG.pf0_bar2_enabled {false} \
+  CONFIG.pf0_bar2_index {7} \
+  CONFIG.pf0_bar2_prefetchable {false} \
+  CONFIG.pf0_bar2_scale {Kilobytes} \
+  CONFIG.pf0_bar2_size {128} \
+  CONFIG.pf0_bar2_type {N/A} \
+  CONFIG.pf0_bar3_64bit {false} \
+  CONFIG.pf0_bar3_enabled {false} \
+  CONFIG.pf0_bar3_index {7} \
+  CONFIG.pf0_bar3_prefetchable {false} \
+  CONFIG.pf0_bar3_scale {Kilobytes} \
+  CONFIG.pf0_bar3_size {128} \
+  CONFIG.pf0_bar3_type {N/A} \
+  CONFIG.pf0_bar4_64bit {false} \
+  CONFIG.pf0_bar4_enabled {false} \
+  CONFIG.pf0_bar4_index {7} \
+  CONFIG.pf0_bar4_prefetchable {false} \
+  CONFIG.pf0_bar4_scale {Kilobytes} \
+  CONFIG.pf0_bar4_size {128} \
+  CONFIG.pf0_bar4_type {N/A} \
+  CONFIG.pf0_bar5_enabled {false} \
+  CONFIG.pf0_bar5_index {7} \
+  CONFIG.pf0_bar5_prefetchable {false} \
+  CONFIG.pf0_bar5_scale {Kilobytes} \
+  CONFIG.pf0_bar5_size {128} \
+  CONFIG.pf0_bar5_type {N/A} \
+  CONFIG.pf0_base_class_menu {Memory_controller} \
+  CONFIG.pf0_class_code_base {05} \
+  CONFIG.pf0_class_code_interface {00} \
+  CONFIG.pf0_class_code_sub {80} \
+  CONFIG.pf0_dev_cap_max_payload {1024_bytes} \
+  CONFIG.pf0_dsn_enabled {false} \
+  CONFIG.pf0_expansion_rom_enabled {false} \
+  CONFIG.pf0_expansion_rom_scale {Kilobytes} \
+  CONFIG.pf0_expansion_rom_size {2} \
+  CONFIG.pf0_msi_enabled {false} \
+  CONFIG.pf0_msix_enabled {true} \
+  CONFIG.pf0_rbar_cap_bar0 {0xffffffffffff} \
+  CONFIG.pf0_rbar_cap_bar1 {0x000000000000} \
+  CONFIG.pf0_rbar_cap_bar2 {0x000000000000} \
+  CONFIG.pf0_rbar_cap_bar3 {0x000000000000} \
+  CONFIG.pf0_rbar_cap_bar4 {0x000000000000} \
+  CONFIG.pf0_rbar_cap_bar5 {0x000000000000} \
+  CONFIG.pf0_rbar_num {1} \
+  CONFIG.pf0_sriov_bar0_64bit {false} \
+  CONFIG.pf0_sriov_bar0_enabled {true} \
+  CONFIG.pf0_sriov_bar0_prefetchable {false} \
+  CONFIG.pf0_sriov_bar0_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar0_size {2} \
+  CONFIG.pf0_sriov_bar0_type {Memory} \
+  CONFIG.pf0_sriov_bar1_64bit {false} \
+  CONFIG.pf0_sriov_bar1_enabled {false} \
+  CONFIG.pf0_sriov_bar1_prefetchable {false} \
+  CONFIG.pf0_sriov_bar1_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar1_size {2} \
+  CONFIG.pf0_sriov_bar1_type {N/A} \
+  CONFIG.pf0_sriov_bar2_64bit {false} \
+  CONFIG.pf0_sriov_bar2_enabled {false} \
+  CONFIG.pf0_sriov_bar2_prefetchable {false} \
+  CONFIG.pf0_sriov_bar2_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar2_size {2} \
+  CONFIG.pf0_sriov_bar2_type {N/A} \
+  CONFIG.pf0_sriov_bar3_64bit {false} \
+  CONFIG.pf0_sriov_bar3_enabled {false} \
+  CONFIG.pf0_sriov_bar3_prefetchable {false} \
+  CONFIG.pf0_sriov_bar3_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar3_size {2} \
+  CONFIG.pf0_sriov_bar3_type {N/A} \
+  CONFIG.pf0_sriov_bar4_64bit {false} \
+  CONFIG.pf0_sriov_bar4_enabled {false} \
+  CONFIG.pf0_sriov_bar4_prefetchable {false} \
+  CONFIG.pf0_sriov_bar4_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar4_size {2} \
+  CONFIG.pf0_sriov_bar4_type {N/A} \
+  CONFIG.pf0_sriov_bar5_enabled {false} \
+  CONFIG.pf0_sriov_bar5_prefetchable {false} \
+  CONFIG.pf0_sriov_bar5_scale {Kilobytes} \
+  CONFIG.pf0_sriov_bar5_size {2} \
+  CONFIG.pf0_sriov_bar5_type {N/A} \
+  CONFIG.pf0_sriov_cap_ver {1} \
+  CONFIG.pf0_sub_class_interface_menu {Other_memory_controller} \
+  CONFIG.pf0_tphr_enable {false} \
+  CONFIG.pf0_vc_cap_enabled {false} \
+  CONFIG.pf1_bar0_64bit {true} \
+  CONFIG.pf1_bar0_enabled {true} \
+  CONFIG.pf1_bar0_index {0} \
+  CONFIG.pf1_bar0_prefetchable {true} \
+  CONFIG.pf1_bar0_scale {Megabytes} \
+  CONFIG.pf1_bar0_size {16} \
+  CONFIG.pf1_bar0_type {Memory} \
+  CONFIG.pf1_bar1_64bit {false} \
+  CONFIG.pf1_bar1_enabled {false} \
+  CONFIG.pf1_bar1_index {7} \
+  CONFIG.pf1_bar1_prefetchable {false} \
+  CONFIG.pf1_bar1_scale {Kilobytes} \
+  CONFIG.pf1_bar1_size {128} \
+  CONFIG.pf1_bar1_type {N/A} \
+  CONFIG.pf1_bar2_64bit {false} \
+  CONFIG.pf1_bar2_enabled {false} \
+  CONFIG.pf1_bar2_index {7} \
+  CONFIG.pf1_bar2_prefetchable {false} \
+  CONFIG.pf1_bar2_scale {Kilobytes} \
+  CONFIG.pf1_bar2_size {128} \
+  CONFIG.pf1_bar2_type {N/A} \
+  CONFIG.pf1_bar3_64bit {false} \
+  CONFIG.pf1_bar3_enabled {false} \
+  CONFIG.pf1_bar3_index {7} \
+  CONFIG.pf1_bar3_prefetchable {false} \
+  CONFIG.pf1_bar3_scale {Kilobytes} \
+  CONFIG.pf1_bar3_size {128} \
+  CONFIG.pf1_bar3_type {N/A} \
+  CONFIG.pf1_bar4_64bit {false} \
+  CONFIG.pf1_bar4_enabled {false} \
+  CONFIG.pf1_bar4_index {7} \
+  CONFIG.pf1_bar4_prefetchable {false} \
+  CONFIG.pf1_bar4_scale {Kilobytes} \
+  CONFIG.pf1_bar4_size {128} \
+  CONFIG.pf1_bar4_type {N/A} \
+  CONFIG.pf1_bar5_enabled {false} \
+  CONFIG.pf1_bar5_index {7} \
+  CONFIG.pf1_bar5_prefetchable {false} \
+  CONFIG.pf1_bar5_scale {Kilobytes} \
+  CONFIG.pf1_bar5_size {128} \
+  CONFIG.pf1_bar5_type {N/A} \
+  CONFIG.pf1_base_class_menu {Memory_controller} \
+  CONFIG.pf1_class_code_base {05} \
+  CONFIG.pf1_class_code_interface {00} \
+  CONFIG.pf1_class_code_sub {80} \
+  CONFIG.pf1_expansion_rom_enabled {false} \
+  CONFIG.pf1_expansion_rom_scale {Kilobytes} \
+  CONFIG.pf1_expansion_rom_size {2} \
+  CONFIG.pf1_msi_enabled {false} \
+  CONFIG.pf1_msix_enabled {false} \
+  CONFIG.pf1_rbar_cap_bar0 {0xffffffffffff} \
+  CONFIG.pf1_rbar_cap_bar1 {0x000000000000} \
+  CONFIG.pf1_rbar_cap_bar2 {0x000000000000} \
+  CONFIG.pf1_rbar_cap_bar3 {0x000000000000} \
+  CONFIG.pf1_rbar_cap_bar4 {0x000000000000} \
+  CONFIG.pf1_rbar_cap_bar5 {0x000000000000} \
+  CONFIG.pf1_rbar_num {1} \
+  CONFIG.pf1_sriov_bar0_64bit {false} \
+  CONFIG.pf1_sriov_bar0_enabled {true} \
+  CONFIG.pf1_sriov_bar0_prefetchable {false} \
+  CONFIG.pf1_sriov_bar0_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar0_size {2} \
+  CONFIG.pf1_sriov_bar0_type {Memory} \
+  CONFIG.pf1_sriov_bar1_64bit {false} \
+  CONFIG.pf1_sriov_bar1_enabled {false} \
+  CONFIG.pf1_sriov_bar1_prefetchable {false} \
+  CONFIG.pf1_sriov_bar1_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar1_size {2} \
+  CONFIG.pf1_sriov_bar1_type {N/A} \
+  CONFIG.pf1_sriov_bar2_64bit {false} \
+  CONFIG.pf1_sriov_bar2_enabled {false} \
+  CONFIG.pf1_sriov_bar2_prefetchable {false} \
+  CONFIG.pf1_sriov_bar2_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar2_size {2} \
+  CONFIG.pf1_sriov_bar2_type {N/A} \
+  CONFIG.pf1_sriov_bar3_64bit {false} \
+  CONFIG.pf1_sriov_bar3_enabled {false} \
+  CONFIG.pf1_sriov_bar3_prefetchable {false} \
+  CONFIG.pf1_sriov_bar3_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar3_size {2} \
+  CONFIG.pf1_sriov_bar3_type {N/A} \
+  CONFIG.pf1_sriov_bar4_64bit {false} \
+  CONFIG.pf1_sriov_bar4_enabled {false} \
+  CONFIG.pf1_sriov_bar4_prefetchable {false} \
+  CONFIG.pf1_sriov_bar4_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar4_size {2} \
+  CONFIG.pf1_sriov_bar4_type {N/A} \
+  CONFIG.pf1_sriov_bar5_enabled {false} \
+  CONFIG.pf1_sriov_bar5_prefetchable {false} \
+  CONFIG.pf1_sriov_bar5_scale {Kilobytes} \
+  CONFIG.pf1_sriov_bar5_size {2} \
+  CONFIG.pf1_sriov_bar5_type {N/A} \
+  CONFIG.pf1_sub_class_interface_menu {Other_memory_controller} \
+  CONFIG.pf1_vendor_id {1234} \
+  CONFIG.pf2_bar0_64bit {true} \
+  CONFIG.pf2_bar0_enabled {true} \
+  CONFIG.pf2_bar0_index {0} \
+  CONFIG.pf2_bar0_prefetchable {true} \
+  CONFIG.pf2_bar0_scale {Megabytes} \
+  CONFIG.pf2_bar0_size {16} \
+  CONFIG.pf2_bar0_type {Memory} \
+  CONFIG.pf2_bar1_64bit {false} \
+  CONFIG.pf2_bar1_enabled {false} \
+  CONFIG.pf2_bar1_index {7} \
+  CONFIG.pf2_bar1_prefetchable {false} \
+  CONFIG.pf2_bar1_scale {Kilobytes} \
+  CONFIG.pf2_bar1_size {128} \
+  CONFIG.pf2_bar1_type {N/A} \
+  CONFIG.pf2_bar2_64bit {false} \
+  CONFIG.pf2_bar2_enabled {false} \
+  CONFIG.pf2_bar2_index {7} \
+  CONFIG.pf2_bar2_prefetchable {false} \
+  CONFIG.pf2_bar2_scale {Kilobytes} \
+  CONFIG.pf2_bar2_size {128} \
+  CONFIG.pf2_bar2_type {N/A} \
+  CONFIG.pf2_bar3_64bit {false} \
+  CONFIG.pf2_bar3_enabled {false} \
+  CONFIG.pf2_bar3_index {7} \
+  CONFIG.pf2_bar3_prefetchable {false} \
+  CONFIG.pf2_bar3_scale {Kilobytes} \
+  CONFIG.pf2_bar3_size {128} \
+  CONFIG.pf2_bar3_type {N/A} \
+  CONFIG.pf2_bar4_64bit {false} \
+  CONFIG.pf2_bar4_enabled {false} \
+  CONFIG.pf2_bar4_index {7} \
+  CONFIG.pf2_bar4_prefetchable {false} \
+  CONFIG.pf2_bar4_scale {Kilobytes} \
+  CONFIG.pf2_bar4_size {128} \
+  CONFIG.pf2_bar4_type {N/A} \
+  CONFIG.pf2_bar5_enabled {false} \
+  CONFIG.pf2_bar5_index {7} \
+  CONFIG.pf2_bar5_prefetchable {false} \
+  CONFIG.pf2_bar5_scale {Kilobytes} \
+  CONFIG.pf2_bar5_size {128} \
+  CONFIG.pf2_bar5_type {N/A} \
+  CONFIG.pf2_base_class_menu {Memory_controller} \
+  CONFIG.pf2_class_code_base {05} \
+  CONFIG.pf2_class_code_interface {00} \
+  CONFIG.pf2_class_code_sub {80} \
+  CONFIG.pf2_expansion_rom_enabled {false} \
+  CONFIG.pf2_expansion_rom_scale {Kilobytes} \
+  CONFIG.pf2_expansion_rom_size {2} \
+  CONFIG.pf2_msi_enabled {false} \
+  CONFIG.pf2_msix_enabled {false} \
+  CONFIG.pf2_rbar_cap_bar0 {0xffffffffffff} \
+  CONFIG.pf2_rbar_cap_bar1 {0x000000000000} \
+  CONFIG.pf2_rbar_cap_bar2 {0x000000000000} \
+  CONFIG.pf2_rbar_cap_bar3 {0x000000000000} \
+  CONFIG.pf2_rbar_cap_bar4 {0x000000000000} \
+  CONFIG.pf2_rbar_cap_bar5 {0x000000000000} \
+  CONFIG.pf2_rbar_num {1} \
+  CONFIG.pf2_sriov_bar0_64bit {false} \
+  CONFIG.pf2_sriov_bar0_enabled {true} \
+  CONFIG.pf2_sriov_bar0_prefetchable {false} \
+  CONFIG.pf2_sriov_bar0_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar0_size {2} \
+  CONFIG.pf2_sriov_bar0_type {Memory} \
+  CONFIG.pf2_sriov_bar1_64bit {false} \
+  CONFIG.pf2_sriov_bar1_enabled {false} \
+  CONFIG.pf2_sriov_bar1_prefetchable {false} \
+  CONFIG.pf2_sriov_bar1_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar1_size {2} \
+  CONFIG.pf2_sriov_bar1_type {N/A} \
+  CONFIG.pf2_sriov_bar2_64bit {false} \
+  CONFIG.pf2_sriov_bar2_enabled {false} \
+  CONFIG.pf2_sriov_bar2_prefetchable {false} \
+  CONFIG.pf2_sriov_bar2_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar2_size {2} \
+  CONFIG.pf2_sriov_bar2_type {N/A} \
+  CONFIG.pf2_sriov_bar3_64bit {false} \
+  CONFIG.pf2_sriov_bar3_enabled {false} \
+  CONFIG.pf2_sriov_bar3_prefetchable {false} \
+  CONFIG.pf2_sriov_bar3_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar3_size {2} \
+  CONFIG.pf2_sriov_bar3_type {N/A} \
+  CONFIG.pf2_sriov_bar4_64bit {false} \
+  CONFIG.pf2_sriov_bar4_enabled {false} \
+  CONFIG.pf2_sriov_bar4_prefetchable {false} \
+  CONFIG.pf2_sriov_bar4_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar4_size {2} \
+  CONFIG.pf2_sriov_bar4_type {N/A} \
+  CONFIG.pf2_sriov_bar5_enabled {false} \
+  CONFIG.pf2_sriov_bar5_prefetchable {false} \
+  CONFIG.pf2_sriov_bar5_scale {Kilobytes} \
+  CONFIG.pf2_sriov_bar5_size {2} \
+  CONFIG.pf2_sriov_bar5_type {N/A} \
+  CONFIG.pf2_sub_class_interface_menu {Other_memory_controller} \
+  CONFIG.pf2_vendor_id {1234} \
+  CONFIG.pf3_bar0_64bit {true} \
+  CONFIG.pf3_bar0_enabled {true} \
+  CONFIG.pf3_bar0_index {0} \
+  CONFIG.pf3_bar0_prefetchable {true} \
+  CONFIG.pf3_bar0_scale {Megabytes} \
+  CONFIG.pf3_bar0_size {16} \
+  CONFIG.pf3_bar0_type {Memory} \
+  CONFIG.pf3_bar1_64bit {false} \
+  CONFIG.pf3_bar1_enabled {false} \
+  CONFIG.pf3_bar1_index {7} \
+  CONFIG.pf3_bar1_prefetchable {false} \
+  CONFIG.pf3_bar1_scale {Kilobytes} \
+  CONFIG.pf3_bar1_size {128} \
+  CONFIG.pf3_bar1_type {N/A} \
+  CONFIG.pf3_bar2_64bit {false} \
+  CONFIG.pf3_bar2_enabled {false} \
+  CONFIG.pf3_bar2_index {7} \
+  CONFIG.pf3_bar2_prefetchable {false} \
+  CONFIG.pf3_bar2_scale {Kilobytes} \
+  CONFIG.pf3_bar2_size {128} \
+  CONFIG.pf3_bar2_type {N/A} \
+  CONFIG.pf3_bar3_64bit {false} \
+  CONFIG.pf3_bar3_enabled {false} \
+  CONFIG.pf3_bar3_index {7} \
+  CONFIG.pf3_bar3_prefetchable {false} \
+  CONFIG.pf3_bar3_scale {Kilobytes} \
+  CONFIG.pf3_bar3_size {128} \
+  CONFIG.pf3_bar3_type {N/A} \
+  CONFIG.pf3_bar4_64bit {false} \
+  CONFIG.pf3_bar4_enabled {false} \
+  CONFIG.pf3_bar4_index {7} \
+  CONFIG.pf3_bar4_prefetchable {false} \
+  CONFIG.pf3_bar4_scale {Kilobytes} \
+  CONFIG.pf3_bar4_size {128} \
+  CONFIG.pf3_bar4_type {N/A} \
+  CONFIG.pf3_bar5_enabled {false} \
+  CONFIG.pf3_bar5_index {7} \
+  CONFIG.pf3_bar5_prefetchable {false} \
+  CONFIG.pf3_bar5_scale {Kilobytes} \
+  CONFIG.pf3_bar5_size {128} \
+  CONFIG.pf3_bar5_type {N/A} \
+  CONFIG.pf3_base_class_menu {Memory_controller} \
+  CONFIG.pf3_class_code_base {05} \
+  CONFIG.pf3_class_code_interface {00} \
+  CONFIG.pf3_class_code_sub {80} \
+  CONFIG.pf3_expansion_rom_enabled {false} \
+  CONFIG.pf3_expansion_rom_scale {Kilobytes} \
+  CONFIG.pf3_expansion_rom_size {2} \
+  CONFIG.pf3_msi_enabled {false} \
+  CONFIG.pf3_msix_enabled {false} \
+  CONFIG.pf3_rbar_cap_bar0 {0xffffffffffff} \
+  CONFIG.pf3_rbar_cap_bar1 {0x000000000000} \
+  CONFIG.pf3_rbar_cap_bar2 {0x000000000000} \
+  CONFIG.pf3_rbar_cap_bar3 {0x000000000000} \
+  CONFIG.pf3_rbar_cap_bar4 {0x000000000000} \
+  CONFIG.pf3_rbar_cap_bar5 {0x000000000000} \
+  CONFIG.pf3_rbar_num {1} \
+  CONFIG.pf3_sriov_bar0_64bit {false} \
+  CONFIG.pf3_sriov_bar0_enabled {true} \
+  CONFIG.pf3_sriov_bar0_prefetchable {false} \
+  CONFIG.pf3_sriov_bar0_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar0_size {2} \
+  CONFIG.pf3_sriov_bar0_type {Memory} \
+  CONFIG.pf3_sriov_bar1_64bit {false} \
+  CONFIG.pf3_sriov_bar1_enabled {false} \
+  CONFIG.pf3_sriov_bar1_prefetchable {false} \
+  CONFIG.pf3_sriov_bar1_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar1_size {2} \
+  CONFIG.pf3_sriov_bar1_type {N/A} \
+  CONFIG.pf3_sriov_bar2_64bit {false} \
+  CONFIG.pf3_sriov_bar2_enabled {false} \
+  CONFIG.pf3_sriov_bar2_prefetchable {false} \
+  CONFIG.pf3_sriov_bar2_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar2_size {2} \
+  CONFIG.pf3_sriov_bar2_type {N/A} \
+  CONFIG.pf3_sriov_bar3_64bit {false} \
+  CONFIG.pf3_sriov_bar3_enabled {false} \
+  CONFIG.pf3_sriov_bar3_prefetchable {false} \
+  CONFIG.pf3_sriov_bar3_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar3_size {2} \
+  CONFIG.pf3_sriov_bar3_type {N/A} \
+  CONFIG.pf3_sriov_bar4_64bit {false} \
+  CONFIG.pf3_sriov_bar4_enabled {false} \
+  CONFIG.pf3_sriov_bar4_prefetchable {false} \
+  CONFIG.pf3_sriov_bar4_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar4_size {2} \
+  CONFIG.pf3_sriov_bar4_type {N/A} \
+  CONFIG.pf3_sriov_bar5_enabled {false} \
+  CONFIG.pf3_sriov_bar5_prefetchable {false} \
+  CONFIG.pf3_sriov_bar5_scale {Kilobytes} \
+  CONFIG.pf3_sriov_bar5_size {2} \
+  CONFIG.pf3_sriov_bar5_type {N/A} \
+  CONFIG.pf3_sub_class_interface_menu {Other_memory_controller} \
+  CONFIG.pf3_vendor_id {1234} \
+  CONFIG.pipe_sim {false} \
+  CONFIG.plltype {QPLL1} \
+  CONFIG.rbar_enable {false} \
+  CONFIG.rcv_msg_if {true} \
+  CONFIG.s_axis_cc.CLK_DOMAIN {} \
+  CONFIG.s_axis_cc.FREQ_HZ {100000000} \
+  CONFIG.s_axis_cc.HAS_TKEEP {1} \
+  CONFIG.s_axis_cc.HAS_TLAST {1} \
+  CONFIG.s_axis_cc.HAS_TREADY {1} \
+  CONFIG.s_axis_cc.HAS_TSTRB {0} \
+  CONFIG.s_axis_cc.INSERT_VIP {0} \
+  CONFIG.s_axis_cc.LAYERED_METADATA {undef} \
+  CONFIG.s_axis_cc.PHASE {0.000} \
+  CONFIG.s_axis_cc.TDATA_NUM_BYTES {16} \
+  CONFIG.s_axis_cc.TDEST_WIDTH {0} \
+  CONFIG.s_axis_cc.TID_WIDTH {0} \
+  CONFIG.s_axis_cc.TUSER_WIDTH {33} \
+  CONFIG.s_axis_rq.CLK_DOMAIN {} \
+  CONFIG.s_axis_rq.FREQ_HZ {100000000} \
+  CONFIG.s_axis_rq.HAS_TKEEP {1} \
+  CONFIG.s_axis_rq.HAS_TLAST {1} \
+  CONFIG.s_axis_rq.HAS_TREADY {1} \
+  CONFIG.s_axis_rq.HAS_TSTRB {0} \
+  CONFIG.s_axis_rq.INSERT_VIP {0} \
+  CONFIG.s_axis_rq.LAYERED_METADATA {undef} \
+  CONFIG.s_axis_rq.PHASE {0.000} \
+  CONFIG.s_axis_rq.TDATA_NUM_BYTES {16} \
+  CONFIG.s_axis_rq.TDEST_WIDTH {0} \
+  CONFIG.s_axis_rq.TID_WIDTH {0} \
+  CONFIG.s_axis_rq.TUSER_WIDTH {62} \
+  CONFIG.select_quad {GTH_Quad_224} \
+  CONFIG.set_finite_credit {false} \
+  CONFIG.sriov_exd_mode {false} \
+  CONFIG.sys_reset_polarity {ACTIVE_LOW} \
+  CONFIG.three_port_switch {false} \
+  CONFIG.tl_credits_cd {15} \
+  CONFIG.tl_credits_ch {15} \
+  CONFIG.two_port_config {X8G3} \
+  CONFIG.two_port_switch {false} \
+  CONFIG.tx_fc_if {true} \
+  CONFIG.type1_membase_memlimit_enable {Enabled} \
+  CONFIG.type1_prefetchable_membase_memlimit {64bit_Enabled} \
+  CONFIG.use_msix_pfs_for_vfs {true} \
+  CONFIG.use_standard_interfaces {false} \
+  CONFIG.vendor_id {1234} \
+  CONFIG.vu9p_board {false} \
+  CONFIG.xlnx_ref_board {None} " [get_ips pcie4_uscale_plus_0]
+
+
