@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Sep  7 10:19:07 2026
+| Date         : Wed Sep  9 16:17:04 2026
 | Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fpga_utilization_synth.rpt -pb fpga_utilization_synth.pb
 | Design       : fpga
@@ -32,8 +32,8 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 23520 |     0 |          0 |    230400 | 10.21 |
-|   LUT as Logic             | 18217 |     0 |          0 |    230400 |  7.91 |
+| CLB LUTs*                  | 23518 |     0 |          0 |    230400 | 10.21 |
+|   LUT as Logic             | 18215 |     0 |          0 |    230400 |  7.91 |
 |   LUT as Memory            |  5303 |     0 |          0 |    101760 |  5.21 |
 |     LUT as Distributed RAM |  5169 |     0 |            |           |       |
 |     LUT as Shift Register  |   134 |     0 |            |           |       |
@@ -41,7 +41,7 @@ Table of Contents
 |   Register as Flip Flop    | 25148 |     0 |          0 |    460800 |  5.46 |
 |   Register as Latch        |     0 |     0 |          0 |    460800 |  0.00 |
 | CARRY8                     |   510 |     0 |          0 |     28800 |  1.77 |
-| F7 Muxes                   |   408 |     0 |          0 |    115200 |  0.35 |
+| F7 Muxes                   |   407 |     0 |          0 |    115200 |  0.35 |
 | F8 Muxes                   |    97 |     0 |          0 |     57600 |  0.17 |
 | F9 Muxes                   |     0 |     0 |          0 |     28800 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
@@ -163,17 +163,17 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-------------+-------+---------------------+
 | FDRE        | 24611 |            Register |
 | LUT6        |  7703 |                 CLB |
-| LUT3        |  4456 |                 CLB |
+| LUT3        |  4455 |                 CLB |
 | LUT5        |  3616 |                 CLB |
-| LUT2        |  3242 |                 CLB |
+| LUT2        |  3244 |                 CLB |
 | RAMD32      |  3226 |                 CLB |
 | RAMD64E     |  3156 |                 CLB |
-| LUT4        |  2842 |                 CLB |
+| LUT4        |  2844 |                 CLB |
 | FDSE        |   516 |            Register |
 | CARRY8      |   510 |                 CLB |
 | RAMS32      |   508 |                 CLB |
 | LUT1        |   423 |                 CLB |
-| MUXF7       |   408 |                 CLB |
+| MUXF7       |   407 |                 CLB |
 | SRL16E      |   134 |                 CLB |
 | RAMB36E2    |    98 |            BLOCKRAM |
 | MUXF8       |    97 |                 CLB |

@@ -1,50 +1,48 @@
-//------------------------------------------------------------------------------
-//  (c) Copyright 2013-2015 Xilinx, Inc. All rights reserved.
+// (c) Copyright 2013-2015, 2023 Advanced Micro Devices, Inc. All rights reserved.
 //
-//  This file contains confidential and proprietary information
-//  of Xilinx, Inc. and is protected under U.S. and
-//  international copyright and other intellectual property
-//  laws.
+// This file contains confidential and proprietary information
+// of AMD and is protected under U.S. and international copyright
+// and other intellectual property laws.
 //
-//  DISCLAIMER
-//  This disclaimer is not a license and does not grant any
-//  rights to the materials distributed herewith. Except as
-//  otherwise provided in a valid license issued to you by
-//  Xilinx, and to the maximum extent permitted by applicable
-//  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-//  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
-//  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
-//  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
-//  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-//  (2) Xilinx shall not be liable (whether in contract or tort,
-//  including negligence, or under any other theory of
-//  liability) for any loss or damage of any kind or nature
-//  related to, arising under or in connection with these
-//  materials, including for any direct, or any indirect,
-//  special, incidental, or consequential loss or damage
-//  (including loss of data, profits, goodwill, or any type of
-//  loss or damage suffered as a result of any action brought
-//  by a third party) even if such damage or loss was
-//  reasonably foreseeable or Xilinx had been advised of the
-//  possibility of the same.
+// DISCLAIMER
+// This disclaimer is not a license and does not grant any
+// rights to the materials distributed herewith. Except as
+// otherwise provided in a valid license issued to you by
+// AMD, and to the maximum extent permitted by applicable
+// law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+// AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+// BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+// INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+// (2) AMD shall not be liable (whether in contract or tort,
+// including negligence, or under any other theory of
+// liability) for any loss or damage of any kind or nature
+// related to, arising under or in connection with these
+// materials, including for any direct, or any indirect,
+// special, incidental, or consequential loss or damage
+// (including loss of data, profits, goodwill, or any type of
+// loss or damage suffered as a result of any action brought
+// by a third party) even if such damage or loss was
+// reasonably foreseeable or AMD had been advised of the
+// possibility of the same.
 //
-//  CRITICAL APPLICATIONS
-//  Xilinx products are not designed or intended to be fail-
-//  safe, or for use in any application requiring fail-safe
-//  performance, such as life-support or safety devices or
-//  systems, Class III medical devices, nuclear facilities,
-//  applications related to the deployment of airbags, or any
-//  other applications that could lead to death, personal
-//  injury, or severe property or environmental damage
-//  (individually and collectively, "Critical
-//  Applications"). Customer assumes the sole risk and
-//  liability of any use of Xilinx products in Critical
-//  Applications, subject only to applicable laws and
-//  regulations governing limitations on product liability.
+// CRITICAL APPLICATIONS
+// AMD products are not designed or intended to be fail-
+// safe, or for use in any application requiring fail-safe
+// performance, such as life-support or safety devices or
+// systems, Class III medical devices, nuclear facilities,
+// applications related to the deployment of airbags, or any
+// other applications that could lead to death, personal
+// injury, or severe property or environmental damage
+// (individually and collectively, "Critical
+// Applications"). Customer assumes the sole risk and
+// liability of any use of AMD products in Critical
+// Applications, subject only to applicable laws and
+// regulations governing limitations on product liability.
 //
-//  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
-//  PART OF THIS FILE AT ALL TIMES.
-//------------------------------------------------------------------------------
+// THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+// PART OF THIS FILE AT ALL TIMES.
+////////////////////////////////////////////////////////////
 
 // ***************************
 // * DO NOT MODIFY THIS FILE *
@@ -52,7 +50,7 @@
 
 `timescale 1ps/1ps
 
-module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
+module gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal # (
   parameter integer C_RX_PLL_TYPE = 0,
   parameter integer C_TX_PLL_TYPE = 0,
   parameter C_SIM_CPLL_CAL_BYPASS = 1'b1,
@@ -64,7 +62,6 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
 )(
   // control signals
   input   wire  [17:0]  TXOUTCLK_PERIOD_IN,
-  input   wire  [15:0]  WAIT_DEASSERT_CPLLPD_IN,
   input   wire  [17:0]  CNT_TOL_IN,
   input   wire  [15:0]  FREQ_COUNT_WINDOW_IN,
   // User Interface
@@ -173,7 +170,7 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
   assign cal_on_tx_reset_in = RESET_IN | cpll_cal_on_tx_or_rx;
   
   wire cal_on_tx_reset_in_sync;
-  gtwizard_ultrascale_v1_7_6_reset_synchronizer reset_synchronizer_resetin_tx_inst (
+  gtwizard_ultrascale_v1_7_17_reset_synchronizer reset_synchronizer_resetin_tx_inst (
     .clk_in   (CLK_IN),
     .rst_in   (cal_on_tx_reset_in),
     .rst_out  (cal_on_tx_reset_in_sync)
@@ -184,31 +181,30 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
   assign cal_on_rx_reset_in = RESET_IN | !cpll_cal_on_tx_or_rx;  
   
   wire cal_on_rx_reset_in_sync;
-  gtwizard_ultrascale_v1_7_6_reset_synchronizer reset_synchronizer_resetin_rx_inst (
+  gtwizard_ultrascale_v1_7_17_reset_synchronizer reset_synchronizer_resetin_rx_inst (
     .clk_in   (CLK_IN),
     .rst_in   (cal_on_rx_reset_in),
     .rst_out  (cal_on_rx_reset_in_sync)
   );
 
   wire drprst_in_sync;
-  gtwizard_ultrascale_v1_7_6_bit_synchronizer bit_synchronizer_drprst_inst (
+  gtwizard_ultrascale_v1_7_17_bit_synchronizer bit_synchronizer_drprst_inst (
     .clk_in (CLK_IN),
     .i_in   (DRPRST_IN),
     .o_out  (drprst_in_sync)
   );
 
-  gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal_tx #
+  gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx #
   (
     .C_SIM_CPLL_CAL_BYPASS(C_SIM_CPLL_CAL_BYPASS),
     .SIM_RESET_SPEEDUP(SIM_RESET_SPEEDUP),
     .C_FREERUN_FREQUENCY(C_FREERUN_FREQUENCY),
     .C_PCIE_ENABLE(C_PCIE_ENABLE),
     .C_PCIE_CORECLK_FREQ(C_PCIE_CORECLK_FREQ)
-  ) gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal_tx_i
+  ) gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_tx_i
   (
     // control signals
     .TXOUTCLK_PERIOD_IN(TXOUTCLK_PERIOD_IN),
-    .WAIT_DEASSERT_CPLLPD_IN(WAIT_DEASSERT_CPLLPD_IN),
     .CNT_TOL_IN(CNT_TOL_IN),
     .FREQ_COUNT_WINDOW_IN(FREQ_COUNT_WINDOW_IN),
     // User Interface
@@ -244,17 +240,16 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
     .DONE(tx_done)
   );  
   
-  gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal_rx #
+  gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_rx #
   (
     .C_SIM_CPLL_CAL_BYPASS(C_SIM_CPLL_CAL_BYPASS),
     .SIM_RESET_SPEEDUP(SIM_RESET_SPEEDUP),
     .CPLL_CAL_ONLY_TX(CPLL_CAL_ONLY_TX),
     .C_FREERUN_FREQUENCY(C_FREERUN_FREQUENCY)
-  ) gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal_rx_i
+  ) gtwizard_ultrascale_v1_7_17_gthe4_cpll_cal_rx_i
   (
     // control signals
     .RXOUTCLK_PERIOD_IN(TXOUTCLK_PERIOD_IN),
-    .WAIT_DEASSERT_CPLLPD_IN(WAIT_DEASSERT_CPLLPD_IN),
     .CNT_TOL_IN(CNT_TOL_IN),
     .FREQ_COUNT_WINDOW_IN(FREQ_COUNT_WINDOW_IN),
     // User Interface
@@ -312,7 +307,7 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
   // DRP ARBITER
   //----------------------------------------------------------------------------------------------
   
-  gtwizard_ultrascale_v1_7_6_gte4_drp_arb #
+  gtwizard_ultrascale_v1_7_17_gte4_drp_arb #
   (
     .ADDR_TX_PROGCLK_SEL(ADDR_TX_PROGCLK_SEL),
     .ADDR_TX_PROGDIV_CFG(ADDR_TX_PROGDIV_CFG),
@@ -323,7 +318,7 @@ module gtwizard_ultrascale_v1_7_6_gthe4_cpll_cal # (
     .C_NUM_CLIENTS(3),
     .C_ADDR_WIDTH(10),
     .C_DATA_WIDTH(16)
-  ) gtwizard_ultrascale_v1_7_6_gte4_drp_arb_i
+  ) gtwizard_ultrascale_v1_7_17_gte4_drp_arb_i
   (
     .DCLK_I         (CLK_IN),
     .RESET_I        (drprst_in_sync),

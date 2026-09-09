@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Sep  4 11:42:24 2026
+// Date        : Mon Sep  7 15:58:45 2026
 // Host        : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_stub.v

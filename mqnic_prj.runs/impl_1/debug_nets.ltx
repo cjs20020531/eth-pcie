@@ -36,7 +36,7 @@
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "pcs_resetdone",
+                                        "name": "axis_eth_tx_tvalid",
                                         "isBus": false
                                     }
                                 ]
@@ -52,7 +52,7 @@
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "pcs_mmcm_locked",
+                                        "name": "axis_eth_tx_tready",
                                         "isBus": false
                                     }
                                 ]
@@ -68,7 +68,7 @@
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "sfp_gtpowergood",
+                                        "name": "axis_eth_tx_tlast",
                                         "isBus": false
                                     }
                                 ]
@@ -84,7 +84,7 @@
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "phy_rx_er",
+                                        "name": "phy_tx_en",
                                         "isBus": false
                                     }
                                 ]
@@ -100,7 +100,7 @@
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "phy_tx_en",
+                                        "name": "phy_tx_er",
                                         "isBus": false
                                     }
                                 ]
@@ -168,10 +168,26 @@
                                 "id": 7,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "phy_rx_er",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 7,
-                                "portIndex": 7,
+                                "portIndex": 8,
                                 "nets": [
                                     {
                                         "name": "phy_rxd",
@@ -202,6 +218,157 @@
                                                 "name": "phy_rxd[0]"
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "rst",
+                                        "isBus": false,
+                                        "parentNetId": 26
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "mac_rx_reset_sync_reg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mac_rx_reset_sync_reg[3]",
+                                                "parentNetId": 27
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 26,
+                        "name": "sync_reset_phy_inst/Q[0]",
+                        "state_reg": [
+                            {
+                                "name": "core_inst/eth_mac_inst/eth_mac_1g_inst/axis_gmii_tx_inst/FSM_sequential_state_reg_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "STATE_PREAMBLE",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "STATE_PAYLOAD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "STATE_LAST",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "STATE_PAD",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "STATE_FCS",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "STATE_IFG",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 27,
+                        "name": "core_inst/mac_rx_reset_sync_reg[3]",
+                        "state_reg": [
+                            {
+                                "name": "core_inst/eth_mac_inst/eth_mac_1g_inst/axis_gmii_rx_inst/FSM_onehot_state_reg_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "STATE_PAYLOAD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "STATE_WAIT_LAST",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "001"
                                     }
                                 ]
                             }

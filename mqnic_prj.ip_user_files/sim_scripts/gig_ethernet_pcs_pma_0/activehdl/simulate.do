@@ -1,0 +1,14 @@
+transcript off
+onbreak {quit -force}
+onerror {quit -force}
+transcript on
+
+asim +access +r +m+gig_ethernet_pcs_pma_0  -L xpm -L gtwizard_ultrascale_v1_7_17 -L xil_defaultlib -L gig_ethernet_pcs_pma_v16_2_15 -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.gig_ethernet_pcs_pma_0 xil_defaultlib.glbl
+
+do {gig_ethernet_pcs_pma_0.udo}
+
+run 1000ns
+
+endsim
+
+quit -force

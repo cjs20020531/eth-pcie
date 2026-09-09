@@ -17,11 +17,11 @@
 # PCS/PMA Clock period Constraints: please do not relax    -
 #-----------------------------------------------------------
 
-create_clock -name gtrefclk -period 8.00 [get_ports gtrefclk_p]
+create_clock -name gtrefclk -period 6.40 [get_ports gtrefclk_p]
 
 
  
-create_clock -name independent_clock_bufg -period 16.00 [get_ports independent_clock_bufg]
+create_clock -name independent_clock_bufg -period 20.00 [get_ports independent_clock_bufg]
 
 
 

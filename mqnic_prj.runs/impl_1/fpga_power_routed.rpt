@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Sep  7 10:29:00 2026
+| Date             : Wed Sep  9 16:25:23 2026
 | Host             : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
 | Command          : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
 | Design           : fpga
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.389        |
+| Total On-Chip Power (W)  | 3.374        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.742        |
-| Device Static (W)        | 0.647        |
+| Dynamic (W)              | 2.727        |
+| Device Static (W)        | 0.646        |
 | Effective TJA (C/W)      | 1.0          |
 | Max Ambient (C)          | 96.7         |
 | Junction Temperature (C) | 28.3         |
@@ -52,26 +52,26 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.232 |       28 |       --- |             --- |
-| CLB Logic                |     0.278 |    69410 |       --- |             --- |
-|   LUT as Logic           |     0.152 |    20763 |    230400 |            9.01 |
-|   LUT as Distributed RAM |     0.100 |     5107 |    101760 |            5.02 |
-|   Register               |     0.019 |    33555 |    460800 |            7.28 |
-|   CARRY8                 |     0.006 |      618 |     28800 |            2.15 |
-|   LUT as Shift Register  |     0.002 |      214 |    101760 |            0.21 |
+| Clocks                   |     0.228 |       28 |       --- |             --- |
+| CLB Logic                |     0.276 |    70046 |       --- |             --- |
+|   LUT as Logic           |     0.152 |    21016 |    230400 |            9.12 |
+|   LUT as Distributed RAM |     0.098 |     5107 |    101760 |            5.02 |
+|   Register               |     0.018 |    33786 |    460800 |            7.33 |
+|   CARRY8                 |     0.006 |      625 |     28800 |            2.17 |
+|   LUT as Shift Register  |     0.002 |      250 |    101760 |            0.25 |
 |   BUFG                   |    <0.001 |        1 |        64 |            1.56 |
-|   Others                 |     0.000 |     1271 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |      526 |    230400 |            0.23 |
-| Signals                  |     0.326 |    58391 |       --- |             --- |
-| Block RAM                |     0.383 |    125.5 |       312 |           40.22 |
-| URAM                     |     0.126 |       17 |        96 |           17.71 |
+|   Others                 |     0.000 |     1329 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      508 |    230400 |            0.22 |
+| Signals                  |     0.327 |    58853 |       --- |             --- |
+| Block RAM                |     0.381 |      126 |       312 |           40.38 |
+| URAM                     |     0.123 |       17 |        96 |           17.71 |
 | MMCM                     |     0.088 |        0 |       --- |             --- |
 | I/O                      |     0.018 |       43 |       360 |           11.94 |
-| GTH                      |     1.133 |        5 |        20 |           25.00 |
+| GTH                      |     1.129 |        5 |        20 |           25.00 |
 | Hard IPs                 |     0.157 |        1 |       --- |             --- |
 |   PCIE                   |     0.157 |        1 |       --- |             --- |
-| Static Power             |     0.647 |          |           |                 |
-| Total                    |     3.389 |          |           |                 |
+| Static Power             |     0.646 |          |           |                 |
+| Total                    |     3.374 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,9 +81,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     2.058 |       1.904 |      0.154 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     2.043 |       1.889 |      0.154 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.073 |       0.002 |      0.071 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.051 |       0.048 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.050 |       0.048 |      0.002 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.196 |       0.049 |      0.147 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.064 |       0.009 |      0.055 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -110,7 +110,7 @@ Table of Contents
 | VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
 | VCCINT_VCU      |       0.900 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
-| MGTAVcc         |       0.900 |     0.307 |       0.296 |      0.011 |       NA    | Unspecified | NA         |
+| MGTAVcc         |       0.900 |     0.306 |       0.295 |      0.011 |       NA    | Unspecified | NA         |
 | MGTAVtt         |       1.200 |     0.596 |       0.573 |      0.023 |       NA    | Unspecified | NA         |
 | MGTVccaux       |       1.800 |     0.012 |       0.012 |      0.000 |       NA    | Unspecified | NA         |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
@@ -178,10 +178,10 @@ Table of Contents
 | qpll0outrefclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                     | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll0outrefclk_out[0]                                                     |            10.0 |
 | qpll1outclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll1outclk_out[0]                                                        |             0.2 |
 | qpll1outrefclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                     | pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gthe4_top.pcie4_uscale_plus_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_common.gen_common_container[3].gen_enabled_common.gthe4_common_wrapper_inst/common_inst/qpll1outrefclk_out[0]                                                     |            10.0 |
-| rxoutclkpcs_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/rxoutclkpcs_out[0]                                                                                                              |            12.8 |
+| rxoutclkpcs_out[0]                                                                                                                                                                                                                                                                                                                                                                                                        | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/rxoutclkpcs_out[0]                                                                                                              |            16.0 |
 | sfp_mgt_refclk_0                                                                                                                                                                                                                                                                                                                                                                                                          | sfp_mgt_refclk_0_p                                                                                                                                                                                                                                                                                                                                                                                         |             6.4 |
-| txoutclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                           | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/txoutclk_out[0]                                                                                                                 |             6.4 |
-| userclk_out                                                                                                                                                                                                                                                                                                                                                                                                               | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk                                                                                                                                                                                                                                                                                                                                                        |            12.8 |
+| txoutclk_out[0]                                                                                                                                                                                                                                                                                                                                                                                                           | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst/gen_gtwizard_gthe4_top.gig_ethernet_pcs_pma_0_gt_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[0].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/txoutclk_out[0]                                                                                                                 |             8.0 |
+| userclk_out                                                                                                                                                                                                                                                                                                                                                                                                               | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk                                                                                                                                                                                                                                                                                                                                                        |            16.0 |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
@@ -194,30 +194,30 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| fpga                                         |     2.742 |
+| fpga                                         |     2.727 |
 |   clk_125mhz_ibufg_inst                      |     0.003 |
-|   core_inst                                  |     1.094 |
-|     core_inst                                |     1.057 |
-|       core_pcie_inst                         |     0.967 |
-|       pcie_if_inst                           |     0.090 |
-|     eth_mac_inst                             |     0.036 |
-|       eth_mac_1g_inst                        |     0.003 |
-|       rx_fifo                                |     0.017 |
-|       tx_fifo                                |     0.016 |
+|   core_inst                                  |     1.077 |
+|     core_inst                                |     1.049 |
+|       core_pcie_inst                         |     0.966 |
+|       pcie_if_inst                           |     0.083 |
+|     eth_mac_inst                             |     0.028 |
+|       eth_mac_1g_inst                        |     0.002 |
+|       rx_fifo                                |     0.013 |
+|       tx_fifo                                |     0.013 |
 |   dbg_hub                                    |     0.003 |
 |     inst                                     |     0.003 |
 |       BSCANID.u_xsdbm_id                     |     0.003 |
-|   gig_ethernet_pcs_pma_0                     |     0.166 |
-|     inst                                     |     0.166 |
+|   gig_ethernet_pcs_pma_0                     |     0.161 |
+|     inst                                     |     0.161 |
 |       core_clocking_i                        |     0.006 |
-|       pcs_pma_block_i                        |     0.161 |
-|   pcie4_uscale_plus_inst                     |     1.366 |
-|     inst                                     |     1.366 |
-|       pcie4_uscale_plus_0_gt_top_i           |     1.017 |
-|       pcie4_uscale_plus_0_pcie_4_0_pipe_inst |     0.348 |
-|   u_ila_0                                    |     0.012 |
-|     inst                                     |     0.012 |
-|       ila_core_inst                          |     0.012 |
+|       pcs_pma_block_i                        |     0.155 |
+|   pcie4_uscale_plus_inst                     |     1.371 |
+|     inst                                     |     1.371 |
+|       pcie4_uscale_plus_0_gt_top_i           |     1.018 |
+|       pcie4_uscale_plus_0_pcie_4_0_pipe_inst |     0.353 |
+|   u_ila_0                                    |     0.014 |
+|     inst                                     |     0.014 |
+|       ila_core_inst                          |     0.014 |
 +----------------------------------------------+-----------+
 
 

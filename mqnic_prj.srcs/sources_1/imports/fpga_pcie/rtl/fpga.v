@@ -739,6 +739,8 @@ wire sfp_gtpowergood;
 
 wire pcs_resetdone;
 wire pcs_mmcm_locked;
+wire pcs_an_interrupt;
+wire [15:0] pcs_status_vector;
 
 wire sfp_mgt_refclk_0;
 wire sfp_mgt_refclk_0_int;
@@ -873,6 +875,9 @@ wire        phy_tx_er;
 wire        phy_reset_n;
 wire        phy_int_n;
 
+// IMPORTANT: regenerate gig_ethernet_pcs_pma_0 with:
+//   Standard=1000BASE-X, RefClkRate=156.25 MHz,
+//   DrpClkRate=50 MHz, GT_Location=GTHE4_CHANNEL_X0Y10.
 gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0 (
   .gtrefclk_p(sfp_mgt_refclk_0_p),                          // input wire gtrefclk_p
   .gtrefclk_n(sfp_mgt_refclk_0_n),                          // input wire gtrefclk_n
@@ -897,15 +902,15 @@ gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0 (
   .gmii_rx_dv(phy_rx_dv),                          // output wire gmii_rx_dv
   .gmii_rx_er(phy_rx_er),                          // output wire gmii_rx_er
   .gmii_isolate(),                      // output wire gmii_isolate
-  .configuration_vector(0),      // input wire [4 : 0] configuration_vector
-  .an_interrupt(),                      // output wire an_interrupt
-  .an_adv_config_vector(0),      // input wire [15 : 0] an_adv_config_vector
-  .an_restart_config(0),            // input wire an_restart_config
-  .status_vector(),                    // output wire [15 : 0] status_vector
-  .reset(rst_50mhz_int),                                    // input wire reset
-  .signal_detect(1)                    // input wire signal_detect
+  .configuration_vector(5'b10000),     // bit 4: enable 1000BASE-X auto-negotiation
+  .an_interrupt(pcs_an_interrupt),      // pulse when auto-negotiation completes
+  .an_adv_config_vector(16'h0020),      // advertise full duplex, no pause
+  .an_restart_config(1'b0),
+  .status_vector(pcs_status_vector),
+  .reset(sfp_drp_rst),                  // active-high reset, 50 MHz independent domain
+  .signal_detect(1'b1)                  // no optical LOS input is exposed
 );
-//’‚¿Ôªª≥…gig
+//????????gig
 
 wire ptp_clk;
 wire ptp_rst;
@@ -1383,7 +1388,7 @@ core_inst (
     .sfp0_rxc(sfp0_rxc_int),
     .sfp0_cfg_rx_prbs31_enable(sfp0_cfg_rx_prbs31_enable_int),
     .sfp0_rx_error_count(sfp0_rx_error_count_int),
-    .sfp0_rx_status(sfp0_rx_status),
+    .sfp0_rx_status(pcs_status_vector[0]),
     .sfp0_tx_disable_b(sfp0_tx_disable_b),
 
     .sfp1_tx_clk(sfp1_tx_clk_int),
@@ -1464,20 +1469,44 @@ BUFG clk_125mhz_dbg_bufg_inst (
     .O(clk_125mhz_dbg)
 );
 
+
+//ila_0 u_ila_0 (
+//	.clk(clk_125mhz_dbg), // input wire clk
+
+
+//	.probe0(pcs_resetdone), // input wire [0:0]  probe0  
+//	.probe1(pcs_mmcm_locked), // input wire [0:0]  probe1 
+//	.probe2(sfp_gtpowergood), // input wire [0:0]  probe2 
+//	.probe3(pcs_an_interrupt), // input wire [0:0]  probe3 
+//	.probe4(rst_50mhz_int), // input wire [0:0]  probe4 
+//	.probe5(phy_txd), // input wire [7:0]  probe5 
+//	.probe6(phy_tx_en), // input wire [0:0]  probe6 
+//	.probe7(phy_rxd), // input wire [7:0]  probe7 
+//	.probe8(phy_rx_dv), // input wire [0:0]  probe8 
+//	.probe9(phy_logic_rst), // input wire [0:0]  probe9 
+//	.probe10(pcs_status_vector) // input wire [15:0]  probe10
+//);
+
+
 ila_0 u_ila_0 (
 	.clk(clk_125mhz_dbg), // input wire clk
 
 
-	.probe0(pcs_resetdone), // input wire [0:0]  probe0  
-	.probe1(pcs_mmcm_locked), // input wire [0:0]  probe1 
-	.probe2(sfp_gtpowergood), // input wire [0:0]  probe2 
-	.probe3(phy_rx_er), // input wire [0:0]  probe3 
-	.probe4(phy_tx_en), // input wire [0:0]  probe4 
-	.probe5(phy_txd), // input wire [7:0]  probe5 
+	.probe0(core_inst.axis_eth_tx_tvalid[0]), // input wire [0:0]  probe0  
+	.probe1(core_inst.axis_eth_tx_tready[0]), // input wire [0:0]  probe1 
+	.probe2(core_inst.axis_eth_tx_tlast[0]), // input wire [0:0]  probe2 
+	.probe3(phy_tx_en), // input wire [0:0]  probe3 
+	.probe4(phy_tx_er), // input wire [0:0]  probe4 
+	.probe5(phy_txd[7:0]), // input wire [7:0]  probe5 
 	.probe6(phy_rx_dv), // input wire [0:0]  probe6 
-	.probe7(phy_rxd) // input wire [7:0]  probe7
+	.probe7(phy_rx_er), // input wire [7:0]  probe7 
+	.probe8(phy_rxd[7:0]), // input wire [0:0]  probe8 
+	.probe9(core_inst.axis_eth_rx_tvalid[0]), // input wire [0:0]  probe9 
+	.probe10(core_inst.axis_eth_rx_tready[0]), // input wire [15:0]  probe10
+	.probe11(core_inst.axis_eth_rx_tlast[0]),
+	.probe12(core_inst.rst),
+	.probe13(core_inst.mac_rx_reset_sync_reg[3])
 );
-
 
 
 endmodule
