@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Sep  9 16:44:57 2026
+# Process ID: 12788
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6292 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2023_2/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1673.711 ; gain = 476.301
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.2.0
+  ****** Build date   : Oct 10 2023-12:01:56
+    **** Build number : 2023.2.1696910516
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+open_run impl_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.844 . Memory (MB): peak = 2971.438 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1927 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 3634.922 ; gain = 7.941
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.768 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 5402.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 5402.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 907 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 88 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 6 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 15 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 211 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 91 instances
+  RAM32X1S => RAM32X1S (RAMS32): 48 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 33 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 358 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 19 instances
+
+open_run: Time (s): cpu = 00:00:56 ; elapsed = 00:00:46 . Memory (MB): peak = 5857.879 ; gain = 4099.332
+impl_1
+puts "DEBUG CORES = [get_debug_cores]"
+DEBUG CORES = dbg_hub u_ila_0
+set hub [get_debug_cores dbg_hub]
+dbg_hub
+if {[llength $hub] == 0} {
+    error "Implemented design does not contain dbg_hub"
+}
+set scan_chain [get_property C_USER_SCAN_CHAIN $hub]
+1
+set scan_mask [expr {1 << ($scan_chain-1)}]
+1
+puts "C_USER_SCAN_CHAIN = $scan_chain"
+C_USER_SCAN_CHAIN = 1
+puts "BSCAN mask = $scan_mask"
+BSCAN mask = 1
+write_debug_probes -force \
+    {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx}
+D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx
+open_hw_manager
+connect_hw_server
+ERROR: [Labtoolstcl 44-586] Disconnect server connection, TCP:localhost:3121, before making a new one.
+if {[llength [get_hw_devices]] == 0} {
+    open_hw_target
+}
+puts "HW devices = [get_hw_devices]"
+HW devices = Unknown_Device_0 dummy_dap_1
+set dev [lindex [get_hw_devices xczu7*] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+if {$dev eq ""} {
+    error "没有找到 xczu7 FPGA，请检查JTAG连接"
+}
+没有找到 xczu7 FPGA，请检查JTAG连接
+{}
+[{}]
+}current_hw_device $dev
+invalid command name "}current_hw_device"
+current_hw_device $dev
+set_property PROGRAM.FILE \
+    {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} $dev
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+set dev [lindex [get_hw_devices xczu7*] 0]
+WARNING: [Labtoolstcl 44-128] No matching hw_devices were found.
+current_hw_device $dev
+set_property PROGRAM.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit" $dev
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property PROBES.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx" $dev
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+puts "BIT = [get_property PROGRAM.FILE $dev]"
+ERROR: [Common 17-161] Invalid option value '' specified for 'object'.
+get_hw_devices
+Unknown_Device_0 dummy_dap_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/86767
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/86767
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/86767
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 17:05:35 2026...

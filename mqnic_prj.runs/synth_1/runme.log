@@ -12,6 +12,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source fpga.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 567.004 ; gain = 183.359
 Command: synth_design -top fpga -part xczu7ev-ffvc1156-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
@@ -19,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5720
+INFO: [Synth 8-7075] Helper process launched with PID 8516
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2141.129 ; gain = 386.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2140.691 ; gain = 385.516
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-11065] parameter 'CL_S_COUNT' becomes localparam in 'axil_crossbar_addr' with formal parameter declaration list [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/lib/axi/rtl/axil_crossbar_addr.v:98]
 WARNING: [Synth 8-11065] parameter 'CL_M_COUNT' becomes localparam in 'axil_crossbar_addr' with formal parameter declaration list [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/lib/axi/rtl/axil_crossbar_addr.v:99]
@@ -270,16 +271,16 @@ INFO: [Synth 8-6155] done synthesizing module 'sync_signal' (0#1) [D:/FPGA/mqnic
 INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [F:/xilinx_2023_2/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73823]
 	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (0#1) [F:/xilinx_2023_2/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73823]
-INFO: [Synth 8-6157] synthesizing module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20420-DESKTOP-JBLB3NJ/realtime/pcie4_uscale_plus_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'pcie4_uscale_plus_0' (0#1) [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20420-DESKTOP-JBLB3NJ/realtime/pcie4_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20268-DESKTOP-JBLB3NJ/realtime/pcie4_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4_uscale_plus_0' (0#1) [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20268-DESKTOP-JBLB3NJ/realtime/pcie4_uscale_plus_0_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axis_rq_tready' does not match port width (4) of module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:553]
 WARNING: [Synth 8-689] width (85) of port connection 'm_axis_cq_tuser' does not match port width (88) of module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:568]
 WARNING: [Synth 8-689] width (1) of port connection 's_axis_cc_tready' does not match port width (4) of module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:574]
 WARNING: [Synth 8-689] width (3) of port connection 'cfg_max_payload' does not match port width (2) of module 'pcie4_uscale_plus_0' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:598]
 WARNING: [Synth 8-7071] port 'cfg_bus_number' of module 'pcie4_uscale_plus_0' is unconnected for instance 'pcie4_uscale_plus_inst' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:541]
 WARNING: [Synth 8-7023] instance 'pcie4_uscale_plus_inst' of module 'pcie4_uscale_plus_0' has 133 connections declared, but only 132 given [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:541]
-INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20420-DESKTOP-JBLB3NJ/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (0#1) [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20420-DESKTOP-JBLB3NJ/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20268-DESKTOP-JBLB3NJ/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (0#1) [D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/.Xil/Vivado-20268-DESKTOP-JBLB3NJ/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'fpga_core' [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga_core.v:103]
 	Parameter FPGA_ID bound to: 74645651 - type: integer 
 	Parameter FW_ID bound to: 0 - type: integer 
@@ -3111,7 +3112,7 @@ Reason is one or more of the following :
 	3: No valid read/write found for RAM. 
 RAM "op_table_doorbell_reg" dissolved into registers
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'core_inst'. This will prevent further optimization [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:1255]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila_0'. This will prevent further optimization [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:1491]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila_1'. This will prevent further optimization [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:1491]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gig_ethernet_pcs_pma_0'. This will prevent further optimization [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:881]
 WARNING: [Synth 8-3848] Net sfp0_tx_clk_int in module/entity fpga does not have driver. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:700]
 WARNING: [Synth 8-3848] Net sfp0_tx_rst_int in module/entity fpga does not have driver. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/imports/fpga_pcie/rtl/fpga.v:701]
@@ -3234,18 +3235,18 @@ WARNING: [Synth 8-7129] Port reg_wr_addr[3] in module mqnic_rb_clk_info is eithe
 WARNING: [Synth 8-7129] Port reg_wr_addr[2] in module mqnic_rb_clk_info is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2654.637 ; gain = 899.516
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2654.270 ; gain = 899.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2670.988 ; gain = 915.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2670.633 ; gain = 915.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2670.988 ; gain = 915.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2670.633 ; gain = 915.457
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2695.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2694.879 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -3256,8 +3257,8 @@ Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_
 Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_0'
 Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc] for cell 'pcie4_uscale_plus_inst'
 Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0/pcie4_uscale_plus_0_in_context.xdc] for cell 'pcie4_uscale_plus_inst'
-Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_0'
-Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_0'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_1'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_1'
 Parsing XDC File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc]
 INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
 INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
@@ -3330,7 +3331,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3332.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3332.477 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 7 instances were transformed.
   BUFG => BUFGCE: 4 instances
@@ -3339,10 +3340,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 1 instance 
 
 系统找不到指定的路径。
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 3332.320 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ila_0' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.178 . Memory (MB): peak = 3332.477 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ila_1' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 3332.320 ; gain = 1577.199
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 3332.477 ; gain = 1577.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -3597,7 +3598,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encod
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'axil_crossbar_addr__parameterized4'
 INFO: [Synth 8-6904] The RAM "irq_rate_limit:/mem_reg_reg" of size (depth=64 x width=19) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 3332.320 ; gain = 1577.199
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 3332.477 ; gain = 1577.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -4452,7 +4453,7 @@ INFO: [Synth 8-7067] Removed DRAM instance i_18/i_29/pcie_us_if_rc_inst/pcie_tlp
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-7067] Removed DRAM instance i_18/i_29/pcie_us_if_rc_inst/pcie_tlp_fifo_inst/pcie_tlp_fifo_raw_inst/seg_ram[0].seg_mem_hdr_reg_64_127_21_27 from module partition__24 due to constant propagation
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 3332.320 ; gain = 1577.199
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:54 . Memory (MB): peak = 3332.477 ; gain = 1577.301
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6057] Memory: "tx_fifo_inst/fifo[0].fifo_inst/fifo_inst/mem_reg" defined in module: "mqnic_interface__GB3" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
 WARNING: [Synth 8-6057] Memory: "eth_mac_inst/tx_fifo/fifo_inst/mem_reg" defined in module: "core_inst" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
@@ -4703,7 +4704,7 @@ WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 23
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 6 of D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 6 of D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:01:57 . Memory (MB): peak = 3332.320 ; gain = 1577.199
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 3332.477 ; gain = 1577.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -4736,7 +4737,7 @@ INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 3
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "core_inst/\iface[0].interface_insti_2 /\core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst /\egress_inst/tx_checksum_inst /data_fifo/mem_reg"
 INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 17 for RAM "core_inst/\iface[0].interface_insti_2 /\core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst /\egress_inst/tx_checksum_inst /data_fifo/mem_reg"
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:10 . Memory (MB): peak = 3332.320 ; gain = 1577.199
+Finished Timing Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:12 . Memory (MB): peak = 3332.477 ; gain = 1577.301
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6057] Memory: "tx_fifo_inst/fifo[0].fifo_inst/fifo_inst/mem_reg" defined in module: "mqnic_interface__GB3" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
 WARNING: [Synth 8-6057] Memory: "eth_mac_inst/tx_fifo/fifo_inst/mem_reg" defined in module: "core_inst" implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
@@ -5013,7 +5014,7 @@ INFO: [Synth 8-7052] The timing for the instance core_inst/iface[0].interface_in
 INFO: [Synth 8-7052] The timing for the instance core_inst/core_pcie_insti_7/core_inst/core_pcie_inst/pcie_msix_inst/tbl_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance core_inst/core_pcie_insti_7/core_inst/core_pcie_inst/pcie_msix_inst/tbl_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:02:23 . Memory (MB): peak = 3353.789 ; gain = 1598.668
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:26 . Memory (MB): peak = 3363.086 ; gain = 1607.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -5034,37 +5035,37 @@ INFO: [Synth 8-7052] The timing for the instance core_inst/core_inst/core_pcie_i
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:02:30 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished IO Insertion : Time (s): cpu = 00:02:22 ; elapsed = 00:02:32 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:21 ; elapsed = 00:02:30 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:22 ; elapsed = 00:02:33 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:25 ; elapsed = 00:02:34 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:25 ; elapsed = 00:02:34 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:02:35 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:38 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:02:35 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:28 ; elapsed = 00:02:38 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -5143,15 +5144,15 @@ Report Cell Usage:
 |68    |OBUFTDS              |     1|
 +------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:27 ; elapsed = 00:02:36 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:28 ; elapsed = 00:02:38 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1180 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:46 ; elapsed = 00:02:16 . Memory (MB): peak = 3396.305 ; gain = 979.852
-Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:02:37 . Memory (MB): peak = 3396.305 ; gain = 1641.184
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:48 ; elapsed = 00:02:18 . Memory (MB): peak = 3405.730 ; gain = 988.711
+Synthesis Optimization Complete : Time (s): cpu = 00:02:28 ; elapsed = 00:02:40 . Memory (MB): peak = 3405.730 ; gain = 1650.555
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.837 . Memory (MB): peak = 3408.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.848 . Memory (MB): peak = 3423.465 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1718 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core_inst/eth_mac_inst/rx_fifo/fifo_inst/mem_reg_bram_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
@@ -5172,7 +5173,7 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core_inst/eth_ma
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core_inst/eth_mac_inst/rx_fifo/fifo_inst/mem_reg_bram_8 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell core_inst/eth_mac_inst/rx_fifo/fifo_inst/mem_reg_bram_9 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance clk_mmcm_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3461.727 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3473.398 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 818 instances were transformed.
   BUFG => BUFGCE: 4 instances
@@ -5194,13 +5195,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1S => RAM64X1S (RAMS64E): 19 instances
 
 系统找不到指定的路径。
-Synth Design complete | Checksum: c237e59f
+Synth Design complete | Checksum: 804a0117
 INFO: [Common 17-83] Releasing license: Synthesis
 930 Infos, 647 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:40 ; elapsed = 00:02:51 . Memory (MB): peak = 3461.727 ; gain = 2842.891
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 3461.727 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:43 ; elapsed = 00:02:58 . Memory (MB): peak = 3473.398 ; gain = 2855.246
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3473.398 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/fpga.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3461.727 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3473.398 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file fpga_utilization_synth.rpt -pb fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 16:17:04 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 15:08:38 2026...

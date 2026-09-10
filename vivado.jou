@@ -3,13 +3,144 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Sep  7 16:54:26 2026
-# Process ID: 12248
+# Start of session at: Wed Sep  9 17:05:42 2026
+# Process ID: 1072
 # Current directory: D:/FPGA/mqnic_prj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7716 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2040 D:\FPGA\mqnic_prj\mqnic_prj.xpr
 # Log file: D:/FPGA/mqnic_prj/vivado.log
 # Journal file: D:/FPGA/mqnic_prj\vivado.jou
 # Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+current_hw_device [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+get_hw_targets
+open_hw_manager
+connect_hw_server
+open_hw_target
+get_hw_devices
+set dev [get_hw_devices xczu7_0]
+current_hw_device $dev
+set_property PROGRAM.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit" $dev
+set_property PROBES.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx" $dev
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+puts "BIT = [get_property PROGRAM.FILE $dev]"
+puts "LTX = [get_property PROBES.FILE $dev]"
+puts "MASK = [get_property BSCAN_SWITCH_USER_MASK $dev]"
+program_hw_devices $dev
+refresh_hw_device $dev
+puts "Detected ILAs = [get_hw_ilas]"
+set target [current_hw_target]
+puts "Current JTAG frequency = [get_property PARAM.FREQUENCY $target]"
+close_hw_target
+set_property PARAM.FREQUENCY 250000 $target
+open_hw_target $target
+puts "New JTAG frequency = [get_property PARAM.FREQUENCY [current_hw_target]]"
+get_hw_devices
+set dev [get_hw_devices xczu7_0]
+current_hw_device $dev
+set_property PROGRAM.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit" $dev
+set_property PROBES.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx" $dev
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+program_hw_devices $dev
+refresh_hw_device $dev
+puts "Detected ILAs = [get_hw_ilas]"
+open_run impl_1
+puts "HUB CLK NET = [get_nets -of_objects [get_pins dbg_hub/clk]]"
+puts "HUB CLK NET = [get_nets -of_objects [get_pins dbg_hub/clk]]"
+puts "HUB INPUT FREQ = [get_property C_CLK_INPUT_FREQ_HZ [get_debug_cores dbg_hub]]"
+puts "HUB DIVIDER = [get_property C_ENABLE_CLK_DIVIDER [get_debug_cores dbg_hub]]"
+puts "HUB CLOCK OBJECT = [get_clocks -of_objects [get_pins dbg_hub/clk]]"
+puts "ILA CLK NET = [get_nets -of_objects [get_pins u_ila_0/clk]]"
+close_design
+reset_run impl_1
+set_property STEPS.OPT_DESIGN.TCL.PRE "D:/FPGA/mqnic_prj/fix_debug_hub.tcl" [get_runs impl_1]
+puts "OPT PRE HOOK = [get_property STEPS.OPT_DESIGN.TCL.PRE [get_runs impl_1]]"
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+puts "EXISTS = [file exists "D:/FPGA/mqnic_prj/fix_debug_hub.tcl"]"
+puts "EXISTS = [file exists "D:/FPGA/mqnic_prj/fix_debug_hub.tcl"]"
+puts "EXISTS = [file exists "D:/FPGA/mqnic_prj/fix_debug_hub.tcl£¬.txt"]"
+puts "EXISTS = [file exists "D:/FPGA/mqnic_prj/fix_debug_hub.tcl"]"
+glob -nocomplain "D:/FPGA/mqnic_prj/fix_debug_hub*"
+close_design
+reset_run impl_1
+set_property STEPS.OPT_DESIGN.TCL.PRE "D:/FPGA/mqnic_prj/fix_debug_hub.tcl" [get_runs impl_1]
+puts "OPT PRE HOOK = [get_property STEPS.OPT_DESIGN.TCL.PRE [get_runs impl_1]]"
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set fp [open "D:/FPGA/mqnic_prj/fix_debug_hub.tcl" r]
+set content [read $fp]
+close $fp
+puts $content
+close_design
+reset_run impl_1
+puts "OPT PRE HOOK = [get_property STEPS.OPT_DESIGN.TCL.PRE [get_runs impl_1]]"
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+puts "HUB CLK NET = [get_nets -of_objects [get_pins dbg_hub/clk]]"
+puts "HUB INPUT FREQ = [get_property C_CLK_INPUT_FREQ_HZ [get_debug_cores dbg_hub]]"
+puts "HUB DIVIDER = [get_property C_ENABLE_CLK_DIVIDER [get_debug_cores dbg_hub]]"
+write_debug_probes -force "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx"
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_0]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_0]
+program_hw_devices [get_hw_devices xczu7_0]
+refresh_hw_device [lindex [get_hw_devices xczu7_0] 0]
+puts "STATUS = [get_property STATUS [get_runs impl_1]]"
+puts "PROGRESS = [get_property PROGRESS [get_runs impl_1]]"
+puts "BIT TIME = [clock format [file mtime "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit"]]"
+puts "LTX TIME = [clock format [file mtime "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx"]]"
+write_debug_probes -force "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_125m.ltx"
+open_hw_manager
+set target [current_hw_target]
+close_hw_target
+set_property PARAM.FREQUENCY 15000000 $target
+open_hw_target $target
+get_hw_devices
+set dev [get_hw_devices xczu7_0]
+current_hw_device $dev
+set_property PROGRAM.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit" $dev
+set_property PROBES.FILE "" $dev
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+program_hw_devices $dev
+set_property PROBES.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_125m.ltx" $dev
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+refresh_hw_device $dev
+puts "MASK = [get_property BSCAN_SWITCH_USER_MASK $dev]"
+puts "LTX = [get_property PROBES.FILE $dev]"
+puts "Detected ILAs = [get_hw_ilas]"
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+wait_on_run impl_1
+puts "SYNTH = [get_property STATUS [get_runs synth_1]]"
+puts "IMPL  = [get_property STATUS [get_runs impl_1]]"
+puts "PROGRESS = [get_property PROGRESS [get_runs impl_1]]"
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

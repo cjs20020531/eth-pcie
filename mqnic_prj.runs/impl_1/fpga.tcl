@@ -123,6 +123,10 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableLutRouteBelPower 1
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
@@ -182,6 +186,23 @@ start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
+OPTRACE "Opt Design: pre hook" START { }
+  set src_rc [catch { 
+    puts "source D:/FPGA/mqnic_prj/fix_debug_hub.tcl"
+    source D:/FPGA/mqnic_prj/fix_debug_hub.tcl
+  } _RESULT] 
+  if {$src_rc} { 
+    set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
+    if { $tool_flow eq {SDx} } { 
+      send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script D:/FPGA/mqnic_prj/fix_debug_hub.tcl failed"
+    } else {
+      send_msg_id runtcl-1 status "$_RESULT"
+      send_msg_id runtcl-2 status "sourcing script D:/FPGA/mqnic_prj/fix_debug_hub.tcl failed"
+    }
+    return -code error
+  }
+OPTRACE "Opt Design: pre hook" END { }
 OPTRACE "read constraints: opt_design" START { }
 OPTRACE "read constraints: opt_design" END { }
 OPTRACE "opt_design" START { }

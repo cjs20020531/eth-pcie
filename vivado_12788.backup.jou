@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Sep  9 16:44:57 2026
+# Process ID: 12788
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6292 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -allow_non_jtag
+open_hw_target
+open_run impl_1
+puts "DEBUG CORES = [get_debug_cores]"
+set hub [get_debug_cores dbg_hub]
+if {[llength $hub] == 0} {
+    error "Implemented design does not contain dbg_hub"
+}
+set scan_chain [get_property C_USER_SCAN_CHAIN $hub]
+set scan_mask [expr {1 << ($scan_chain-1)}]
+puts "C_USER_SCAN_CHAIN = $scan_chain"
+puts "BSCAN mask = $scan_mask"
+write_debug_probes -force \
+    {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx}
+open_hw_manager
+connect_hw_server
+if {[llength [get_hw_devices]] == 0} {
+    open_hw_target
+}
+puts "HW devices = [get_hw_devices]"
+set dev [lindex [get_hw_devices xczu7*] 0]
+if {$dev eq ""} {
+    error "没有找到 xczu7 FPGA，请检查JTAG连接"
+}
+{}
+}current_hw_device $dev
+current_hw_device $dev
+set_property PROGRAM.FILE \
+    {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} $dev
+open_hw_target
+set dev [lindex [get_hw_devices xczu7*] 0]
+current_hw_device $dev
+set_property PROGRAM.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit" $dev
+set_property PROBES.FILE "D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx" $dev
+set_property BSCAN_SWITCH_USER_MASK 1 $dev
+puts "BIT = [get_property PROGRAM.FILE $dev]"
+get_hw_devices

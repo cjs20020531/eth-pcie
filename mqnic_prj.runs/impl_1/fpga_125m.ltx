@@ -1,0 +1,381 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_tx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_tx_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_tx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "phy_tx_en",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "phy_tx_er",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "phy_txd",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "phy_txd[7]"
+                                            },
+                                            {
+                                                "name": "phy_txd[6]"
+                                            },
+                                            {
+                                                "name": "phy_txd[5]"
+                                            },
+                                            {
+                                                "name": "phy_txd[4]"
+                                            },
+                                            {
+                                                "name": "phy_txd[3]"
+                                            },
+                                            {
+                                                "name": "phy_txd[2]"
+                                            },
+                                            {
+                                                "name": "phy_txd[1]"
+                                            },
+                                            {
+                                                "name": "phy_txd[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "phy_rx_dv",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "phy_rx_er",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "phy_rxd",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "phy_rxd[7]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[6]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[5]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[4]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[3]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[2]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[1]"
+                                            },
+                                            {
+                                                "name": "phy_rxd[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "axis_eth_rx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "rst",
+                                        "isBus": false,
+                                        "parentNetId": 26
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "mac_rx_reset_sync_reg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mac_rx_reset_sync_reg[3]",
+                                                "parentNetId": 27
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 26,
+                        "name": "sync_reset_phy_inst/Q[0]",
+                        "state_reg": [
+                            {
+                                "name": "core_inst/eth_mac_inst/eth_mac_1g_inst/axis_gmii_tx_inst/FSM_sequential_state_reg_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "STATE_PREAMBLE",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "STATE_PAYLOAD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "STATE_LAST",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "STATE_PAD",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "STATE_FCS",
+                                        "val": "101"
+                                    },
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "STATE_IFG",
+                                        "val": "110"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 27,
+                        "name": "core_inst/mac_rx_reset_sync_reg[3]",
+                        "state_reg": [
+                            {
+                                "name": "core_inst/eth_mac_inst/eth_mac_1g_inst/axis_gmii_rx_inst/FSM_onehot_state_reg_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "STATE_PAYLOAD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "STATE_WAIT_LAST",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "STATE_IDLE",
+                                        "val": "001"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

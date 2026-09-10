@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Sep  9 16:25:07 2026
+| Date         : Thu Sep 10 15:19:19 2026
 | Host         : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
 | Design       : fpga
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 50
+             Violations found: 51
 +-----------+------------------+-------------------------------------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                                                         | Violations |
 +-----------+------------------+-------------------------------------------------------------------------------------+------------+
@@ -32,6 +32,7 @@ Table of Contents
 | TIMING-54 | Critical Warning | Scoped false path, clock group or max delay datapath only constraint between clocks | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                                                        | 15         |
 | SYNTH-15  | Warning          | Byte wide write enable not inferred                                                 | 4          |
+| TIMING-37 | Warning          | Bus skew constraint applied on signals with fanout                                  | 1          |
 | XDCH-2    | Warning          | Same min and max delay values on IO port                                            | 28         |
 +-----------+------------------+-------------------------------------------------------------------------------------+------------+
 
@@ -39,12 +40,12 @@ Table of Contents
 -----------------
 TIMING-6#1 Critical Warning
 No common primary clock between related clocks  
-The clocks txoutclk_out[0] and clk_125mhz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks clk_125mhz]
+The clocks txoutclk_out[0] and pcie_user_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks pcie_user_clk]
 Related violations: <none>
 
 TIMING-7#1 Critical Warning
 No common node between related clocks  
-The clocks txoutclk_out[0] and clk_125mhz are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks clk_125mhz]
+The clocks txoutclk_out[0] and pcie_user_clk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks txoutclk_out[0]] -to [get_clocks pcie_user_clk]
 Related violations: <none>
 
 TIMING-54#1 Critical Warning
@@ -206,6 +207,11 @@ Related violations: <none>
 SYNTH-15#4 Warning
 Byte wide write enable not inferred  
 Byte wide write enable (BWWE) is not inferred for Block RAM core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/queue_ram_reg_1_bram_1 because address width (13) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+TIMING-37#1 Warning
+Bus skew constraint applied on signals with fanout  
+Bus skew constraint is not recommended on signals that have a fanout (see constraint position 162 in the Timing Constraint window in Vivado IDE). First endpoint covered by the constraint: core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/wr_ptr_gray_sync1_reg_reg[0]/D
 Related violations: <none>
 
 XDCH-2#1 Warning
