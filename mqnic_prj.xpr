@@ -66,13 +66,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="11"/>
-    <Option Name="WTModelSimExportSim" Val="11"/>
-    <Option Name="WTQuestaExportSim" Val="11"/>
+    <Option Name="WTXSimExportSim" Val="12"/>
+    <Option Name="WTModelSimExportSim" Val="12"/>
+    <Option Name="WTQuestaExportSim" Val="12"/>
     <Option Name="WTIesExportSim" Val="5"/>
-    <Option Name="WTVcsExportSim" Val="11"/>
-    <Option Name="WTRivieraExportSim" Val="11"/>
-    <Option Name="WTActivehdlExportSim" Val="11"/>
+    <Option Name="WTVcsExportSim" Val="12"/>
+    <Option Name="WTRivieraExportSim" Val="12"/>
+    <Option Name="WTActivehdlExportSim" Val="12"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -2028,6 +2028,107 @@
         <Generic Name="AXIS_PCIE_DATA_WIDTH" Val="128"/>
       </Config>
     </FileSet>
+    <FileSet Name="clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0" RelGenDir="$PGENDIR/clk_wiz_0">
+      <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="clk_wiz_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Generic Name="FPGA_ID" Val="32&apos;h04730093"/>
+        <Generic Name="FW_ID" Val="32&apos;h00000000"/>
+        <Generic Name="FW_VER" Val="32&apos;h00000100"/>
+        <Generic Name="BOARD_ID" Val="32&apos;h10ee906a"/>
+        <Generic Name="BOARD_VER" Val="32&apos;h01000000"/>
+        <Generic Name="BUILD_DATE" Val="32&apos;d1783950777"/>
+        <Generic Name="GIT_HASH" Val="32&apos;h00000000"/>
+        <Generic Name="RELEASE_INFO" Val="32&apos;h00000000"/>
+        <Generic Name="TDMA_BER_ENABLE" Val="0"/>
+        <Generic Name="PORTS_PER_IF" Val="1"/>
+        <Generic Name="SCHED_PER_IF" Val="1"/>
+        <Generic Name="PORT_MASK" Val="0"/>
+        <Generic Name="CLK_PERIOD_NS_NUM" Val="4"/>
+        <Generic Name="CLK_PERIOD_NS_DENOM" Val="1"/>
+        <Generic Name="PTP_CLOCK_PIPELINE" Val="0"/>
+        <Generic Name="PTP_CLOCK_CDC_PIPELINE" Val="0"/>
+        <Generic Name="PTP_PORT_CDC_PIPELINE" Val="0"/>
+        <Generic Name="PTP_PEROUT_ENABLE" Val="1"/>
+        <Generic Name="PTP_PEROUT_COUNT" Val="1"/>
+        <Generic Name="EVENT_QUEUE_OP_TABLE_SIZE" Val="32"/>
+        <Generic Name="TX_QUEUE_OP_TABLE_SIZE" Val="32"/>
+        <Generic Name="RX_QUEUE_OP_TABLE_SIZE" Val="32"/>
+        <Generic Name="CQ_OP_TABLE_SIZE" Val="32"/>
+        <Generic Name="EQN_WIDTH" Val="6"/>
+        <Generic Name="TX_QUEUE_INDEX_WIDTH" Val="13"/>
+        <Generic Name="RX_QUEUE_INDEX_WIDTH" Val="8"/>
+        <Generic Name="CQN_WIDTH" Val="14"/>
+        <Generic Name="EQ_PIPELINE" Val="3"/>
+        <Generic Name="TX_QUEUE_PIPELINE" Val="4"/>
+        <Generic Name="RX_QUEUE_PIPELINE" Val="3"/>
+        <Generic Name="CQ_PIPELINE" Val="5"/>
+        <Generic Name="TX_DESC_TABLE_SIZE" Val="32"/>
+        <Generic Name="RX_DESC_TABLE_SIZE" Val="32"/>
+        <Generic Name="RX_INDIR_TBL_ADDR_WIDTH" Val="8"/>
+        <Generic Name="TX_SCHEDULER_OP_TABLE_SIZE" Val="32"/>
+        <Generic Name="TX_SCHEDULER_PIPELINE" Val="4"/>
+        <Generic Name="TDMA_INDEX_WIDTH" Val="6"/>
+        <Generic Name="PTP_TS_ENABLE" Val="1"/>
+        <Generic Name="TX_CPL_FIFO_DEPTH" Val="32"/>
+        <Generic Name="TX_CHECKSUM_ENABLE" Val="1"/>
+        <Generic Name="RX_HASH_ENABLE" Val="1"/>
+        <Generic Name="RX_CHECKSUM_ENABLE" Val="1"/>
+        <Generic Name="PFC_ENABLE" Val="1"/>
+        <Generic Name="LFC_ENABLE" Val="1"/>
+        <Generic Name="ENABLE_PADDING" Val="1"/>
+        <Generic Name="ENABLE_DIC" Val="1"/>
+        <Generic Name="MIN_FRAME_LENGTH" Val="64"/>
+        <Generic Name="TX_FIFO_DEPTH" Val="32768"/>
+        <Generic Name="RX_FIFO_DEPTH" Val="65536"/>
+        <Generic Name="MAX_TX_SIZE" Val="9214"/>
+        <Generic Name="MAX_RX_SIZE" Val="9214"/>
+        <Generic Name="TX_RAM_SIZE" Val="32768"/>
+        <Generic Name="RX_RAM_SIZE" Val="32768"/>
+        <Generic Name="DDR_CH" Val="1"/>
+        <Generic Name="DDR_ENABLE" Val="0"/>
+        <Generic Name="AXI_DDR_ID_WIDTH" Val="8"/>
+        <Generic Name="AXI_DDR_MAX_BURST_LEN" Val="256"/>
+        <Generic Name="APP_ID" Val="32&apos;h00000000"/>
+        <Generic Name="APP_ENABLE" Val="0"/>
+        <Generic Name="APP_CTRL_ENABLE" Val="1"/>
+        <Generic Name="APP_DMA_ENABLE" Val="1"/>
+        <Generic Name="APP_AXIS_DIRECT_ENABLE" Val="1"/>
+        <Generic Name="APP_AXIS_SYNC_ENABLE" Val="1"/>
+        <Generic Name="APP_AXIS_IF_ENABLE" Val="1"/>
+        <Generic Name="APP_STAT_ENABLE" Val="1"/>
+        <Generic Name="DMA_IMM_ENABLE" Val="0"/>
+        <Generic Name="DMA_IMM_WIDTH" Val="32"/>
+        <Generic Name="DMA_LEN_WIDTH" Val="16"/>
+        <Generic Name="DMA_TAG_WIDTH" Val="16"/>
+        <Generic Name="RAM_ADDR_WIDTH" Val="15"/>
+        <Generic Name="RAM_PIPELINE" Val="2"/>
+        <Generic Name="IRQ_INDEX_WIDTH" Val="6"/>
+        <Generic Name="AXIL_CTRL_DATA_WIDTH" Val="32"/>
+        <Generic Name="AXIL_CTRL_ADDR_WIDTH" Val="24"/>
+        <Generic Name="AXIL_APP_CTRL_DATA_WIDTH" Val="32"/>
+        <Generic Name="AXIL_APP_CTRL_ADDR_WIDTH" Val="24"/>
+        <Generic Name="AXIS_ETH_TX_PIPELINE" Val="0"/>
+        <Generic Name="AXIS_ETH_TX_FIFO_PIPELINE" Val="2"/>
+        <Generic Name="AXIS_ETH_TX_TS_PIPELINE" Val="0"/>
+        <Generic Name="AXIS_ETH_RX_PIPELINE" Val="0"/>
+        <Generic Name="AXIS_ETH_RX_FIFO_PIPELINE" Val="2"/>
+        <Generic Name="STAT_ENABLE" Val="1"/>
+        <Generic Name="STAT_DMA_ENABLE" Val="1"/>
+        <Generic Name="STAT_PCIE_ENABLE" Val="1"/>
+        <Generic Name="STAT_INC_WIDTH" Val="24"/>
+        <Generic Name="STAT_ID_WIDTH" Val="12"/>
+        <Generic Name="AXIS_PCIE_DATA_WIDTH" Val="128"/>
+        <Generic Name="IF_COUNT" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -2108,7 +2209,17 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 8 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="clk_wiz_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/clk_wiz_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/clk_wiz_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/clk_wiz_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 16 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
@@ -2195,6 +2306,23 @@
       <RQSFiles/>
     </Run>
     <Run Id="ila_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="ila_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ila_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/ila_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/ila_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="clk_wiz_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="clk_wiz_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/clk_wiz_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/clk_wiz_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>

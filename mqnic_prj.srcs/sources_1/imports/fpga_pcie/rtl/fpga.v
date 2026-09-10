@@ -1468,7 +1468,23 @@ BUFG clk_125mhz_dbg_bufg_inst (
     .I(clk_125mhz_ibufg),
     .O(clk_125mhz_dbg)
 );
+wire clk_125mhz_pll_raw;
+wire clk_125mhz_ila;
+  clk_wiz_0 u_clk_wiz_0
+   (
+    // Clock out ports
+    .clk_out1(clk_125mhz_pll_raw),     // output clk_out1
+    // Status and control signals
+    .reset(0), // input reset
+    .locked(),       // output locked
+   // Clock in ports
+    .clk_in1(clk_125mhz_ibufg)      // input clk_in1
+);
 
+BUFG clk_125mhz_ila_bufg_inst (
+    .I(clk_125mhz_pll_raw),
+    .O(clk_125mhz_ila)
+);
 
 //ila_1 u_ila_1 (
 //	.clk(clk_125mhz_int), // input wire clk
@@ -1489,7 +1505,7 @@ BUFG clk_125mhz_dbg_bufg_inst (
 
 
 ila_0 u_ila_0 (
-	.clk(clk_125mhz_int), // input wire clk
+	.clk(clk_125mhz_ila), // input wire clk
 
 
 	.probe0(core_inst.axis_eth_tx_tvalid[0]), // input wire [0:0]  probe0  

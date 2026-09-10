@@ -71,11 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param power.BramSDPPropagationFix 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableLutRouteBelPower 1
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu7ev-ffvc1156-2-e
 
@@ -222,6 +217,11 @@ set_property used_in_synthesis false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj
 set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
+
+read_ip -quiet D:/FPGA/mqnic_prj/mqnic_prj.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
