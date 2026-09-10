@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Sep 10 16:55:50 2026
+# Process ID: 22192
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17324 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+refresh_hw_device [lindex [get_hw_devices Unknown_Device_0] 0]
+refresh_hw_device [lindex [get_hw_devices Unknown_Device_0] 0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_1]
+program_hw_devices [get_hw_devices xczu7_1]
+refresh_hw_device [lindex [get_hw_devices xczu7_1] 0]
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_1]
+program_hw_devices [get_hw_devices xczu7_1]
+refresh_hw_device [lindex [get_hw_devices xczu7_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.ltx} [get_hw_devices xczu7_1]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_1]
+program_hw_devices [get_hw_devices xczu7_1]
+refresh_hw_device [lindex [get_hw_devices xczu7_1] 0]
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+puts "DEBUG CORES = [get_debug_cores]"
+puts "ILA CLK = [get_nets -of_objects [get_pins u_ila_1/clk]]"
+puts "HUB CLK = [get_nets -of_objects [get_pins dbg_hub/clk]]"
+puts "HUB FREQ = [get_property C_CLK_INPUT_FREQ_HZ [get_debug_cores dbg_hub]]"
+puts "HUB DIVIDER = [get_property C_ENABLE_CLK_DIVIDER [get_debug_cores dbg_hub]]"
+puts "ILA CLK = [get_nets -of_objects [get_pins u_ila_1/clk]]"
+puts "ILA CLK = [get_nets -of_objects [get_pins u_ila_0/clk]]"
+puts "STATUS = [get_property STATUS [get_runs impl_1]]"
+puts "PROGRESS = [get_property PROGRESS [get_runs impl_1]]"
+write_debug_probes -force \
+"D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_125m_current.ltx"
+set dev [get_hw_devices xczu7_0]
+set_property PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_125m_current.ltx} [get_hw_devices xczu7_1]
+set_property FULL_PROBES.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga_125m_current.ltx} [get_hw_devices xczu7_1]
+set_property PROGRAM.FILE {D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/fpga.bit} [get_hw_devices xczu7_1]
+program_hw_devices [get_hw_devices xczu7_1]

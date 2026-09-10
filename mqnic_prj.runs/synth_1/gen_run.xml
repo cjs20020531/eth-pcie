@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1789023918">
+<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1789039329">
   <File Type="PA-TCL" Name="fpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fpga_reports.tcl"/>
@@ -934,6 +934,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../corundum-master/fpga/mqnic/ZCU106/fpga_pcie/rtl/fpga.v"/>
         <Attr Name="ImportTime" Val="1701509449"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_1/ila_1.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

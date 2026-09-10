@@ -1470,8 +1470,8 @@ BUFG clk_125mhz_dbg_bufg_inst (
 );
 
 
-//ila_0 u_ila_0 (
-//	.clk(clk_125mhz_dbg), // input wire clk
+//ila_1 u_ila_1 (
+//	.clk(clk_125mhz_int), // input wire clk
 
 
 //	.probe0(pcs_resetdone), // input wire [0:0]  probe0  
@@ -1488,8 +1488,8 @@ BUFG clk_125mhz_dbg_bufg_inst (
 //);
 
 
-ila_0 u_ila_1 (
-	.clk(pcie_user_clk), // input wire clk
+ila_0 u_ila_0 (
+	.clk(clk_125mhz_int), // input wire clk
 
 
 	.probe0(core_inst.axis_eth_tx_tvalid[0]), // input wire [0:0]  probe0  

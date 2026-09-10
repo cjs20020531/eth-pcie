@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Sep 10 16:16:51 2026
+# Process ID: 6284
+# Current directory: D:/FPGA/mqnic_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19656 D:\FPGA\mqnic_prj\mqnic_prj.xpr
+# Log file: D:/FPGA/mqnic_prj/vivado.log
+# Journal file: D:/FPGA/mqnic_prj\vivado.jou
+# Running On: DESKTOP-JBLB3NJ, OS: Windows, CPU Frequency: 4192 MHz, CPU Physical cores: 16, Host memory: 67804 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/mqnic_prj/mqnic_prj.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/xilinx_2023_2/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx_2023_2/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1695.059 ; gain = 468.605
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2023.2.0
+  ****** Build date   : Oct 10 2023-12:01:56
+    **** Build number : 2023.2.1696910516
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu7ev-ffvc1156-2-e
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0.dcp' for cell 'pcie4_uscale_plus_inst'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_1/ila_1.dcp' for cell 'u_ila_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 2977.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1905 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila_1 UUID: 3b505a03-0738-513c-9847-1d25f5b1f848 
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila_1/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila_1/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'u_ila_1/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'u_ila_1/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/ip_0/synth/gig_ethernet_pcs_pma_0_gt.xdc] for cell 'gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gig_ethernet_pcs_pma_0_gt_i/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_clocks.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/ip_0/synth/pcie4_uscale_plus_0_gt.xdc] for cell 'pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_impl_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_impl_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:225]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1839' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:232]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1840' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:234]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'REQP-1857' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:236]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:247]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:248]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:252]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:253]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:255]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:256]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc:257]
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/source/ip_pcie4_uscale_plus_x0y0.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:29]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:45]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:58]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:78]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:80]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:104]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc:131]
+Finished Parsing XDC File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/fpga.xdc]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst
+INFO: [Timing 38-2] Deriving generated clocks [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl:23]
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_cpl_fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/eth_mac_inst/rx_fifo/fifo_inst
+Inserting timing constraints for axis_async_fifo instance core_inst/eth_mac_inst/tx_fifo/fifo_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/axis_async_fifo.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/sync_reset.tcl]
+Inserting timing constraints for sync_reset instance sync_reset_125mhz_inst
+Inserting timing constraints for sync_reset instance sync_reset_50mhz_inst
+Inserting timing constraints for sync_reset instance sync_reset_phy_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/axis/syn/vivado/sync_reset.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+Inserting timing constraints for ptp_td_leaf instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_ptp_inst/ptp_clock_inst/ptp_td_leaf_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/mqnic/ZCU106/fpga_pcie/lib/eth/syn/vivado/ptp_td_leaf.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+Inserting timing constraints for mqnic_port instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst
+WARNING: [Vivado 12-180] No cells matched 'tx_enable_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_enable_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_en_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_en_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_req_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_lfc_req_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_en_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_en_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_req_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_pfc_req_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_fc_quanta_step_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'tx_fc_quanta_step_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_enable_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_enable_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_en_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_en_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_ack_sync_1_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_ack_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_en_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_en_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_ack_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_ack_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_req_sync_2_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_lfc_req_sync_3_reg_reg'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_req_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_pfc_req_sync_3_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_fc_quanta_step_sync_1_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+WARNING: [Vivado 12-180] No cells matched 'rx_fc_quanta_step_sync_2_reg_reg[*]'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_port.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+Inserting timing constraints for mqnic_ptp_clock instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_ptp_inst/ptp_clock_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_ptp_clock.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+Inserting timing constraints for mqnic_rb_clk_info instance core_inst/core_inst/core_pcie_inst/core_inst/mqnic_rb_clk_info_inst
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/mqnic_rb_clk_info.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == rb_drp || REF_NAME == rb_drp)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/rb_drp.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == eth_xcvr_phy_10g_gty_wrapper || REF_NAME == eth_xcvr_phy_10g_gty_wrapper)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/eth_xcvr_phy_10g_gty_wrapper.tcl]
+Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {(ORIG_REF_NAME == tdma_ber_ch || REF_NAME == tdma_ber_ch)}'. [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl:6]
+Finished Sourcing Tcl File [D:/FPGA/mqnic_prj/mqnic_prj.srcs/constrs_1/imports/fpga/common/syn/vivado/tdma_ber_ch.tcl]
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/pcie4_uscale_plus_0_board.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:73]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'TIMING-54' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc:73]
+Finished Parsing XDC File [d:/FPGA/mqnic_prj/mqnic_prj.gen/sources_1/ip/pcie4_uscale_plus_0/synth/pcie4_uscale_plus_0_late.xdc] for cell 'pcie4_uscale_plus_inst/inst'
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 69 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 5427.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 893 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 1 instance 
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 6 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 15 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 21 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 209 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 87 instances
+  RAM32X1S => RAM32X1S (RAMS32): 48 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 33 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 358 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 19 instances
+
+open_run: Time (s): cpu = 00:01:06 ; elapsed = 00:00:53 . Memory (MB): peak = 5427.203 ; gain = 3644.781
+reset_run synth_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\rtl\gmii_mac\eth_mac_1g_fifo.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\rtl\gmii_mac\eth_mac_1g_fifo.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\rtl\gmii_mac\eth_mac_1g_fifo.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\rtl\gmii_mac\eth_mac_1g_fifo.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\FPGA\mqnic_prj\mqnic_prj.srcs\sources_1\imports\fpga_pcie\rtl\fpga_core.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Sep 10 16:43:24 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/synth_1/runme.log
+[Thu Sep 10 16:43:24 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/mqnic_prj/mqnic_prj.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/86767
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/86767
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 10 16:55:48 2026...

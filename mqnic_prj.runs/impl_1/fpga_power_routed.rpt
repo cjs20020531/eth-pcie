@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Thu Sep 10 15:19:35 2026
+| Date             : Thu Sep 10 19:33:54 2026
 | Host             : DESKTOP-JBLB3NJ running 64-bit major release  (build 9200)
 | Command          : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
 | Design           : fpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.382        |
+| Total On-Chip Power (W)  | 3.355        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.736        |
+| Dynamic (W)              | 2.709        |
 | Device Static (W)        | 0.646        |
 | Effective TJA (C/W)      | 1.0          |
 | Max Ambient (C)          | 96.7         |
@@ -52,26 +52,26 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.236 |       28 |       --- |             --- |
-| CLB Logic                |     0.281 |    70212 |       --- |             --- |
-|   LUT as Logic           |     0.154 |    21010 |    230400 |            9.12 |
-|   LUT as Distributed RAM |     0.100 |     5107 |    101760 |            5.02 |
-|   Register               |     0.019 |    33952 |    460800 |            7.37 |
+| Clocks                   |     0.223 |       28 |       --- |             --- |
+| CLB Logic                |     0.280 |    70189 |       --- |             --- |
+|   LUT as Logic           |     0.152 |    20966 |    230400 |            9.10 |
+|   LUT as Distributed RAM |     0.101 |     5107 |    101760 |            5.02 |
+|   Register               |     0.019 |    33929 |    460800 |            7.36 |
 |   CARRY8                 |     0.006 |      625 |     28800 |            2.17 |
 |   LUT as Shift Register  |     0.002 |      250 |    101760 |            0.25 |
 |   BUFG                   |    <0.001 |        1 |        64 |            1.56 |
 |   Others                 |     0.000 |     1329 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      508 |    230400 |            0.22 |
-| Signals                  |     0.317 |    58988 |       --- |             --- |
-| Block RAM                |     0.385 |      126 |       312 |           40.38 |
-| URAM                     |     0.123 |       17 |        96 |           17.71 |
+| Signals                  |     0.311 |    59003 |       --- |             --- |
+| Block RAM                |     0.381 |      126 |       312 |           40.38 |
+| URAM                     |     0.122 |       17 |        96 |           17.71 |
 | MMCM                     |     0.088 |        0 |       --- |             --- |
 | I/O                      |     0.018 |       43 |       360 |           11.94 |
 | GTH                      |     1.129 |        5 |        20 |           25.00 |
 | Hard IPs                 |     0.157 |        1 |       --- |             --- |
 |   PCIE                   |     0.157 |        1 |       --- |             --- |
 | Static Power             |     0.646 |          |           |                 |
-| Total                    |     3.382 |          |           |                 |
+| Total                    |     3.355 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,9 +81,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     2.052 |       1.898 |      0.154 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     2.021 |       1.867 |      0.154 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.073 |       0.002 |      0.071 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.051 |       0.049 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.051 |       0.048 |      0.002 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.196 |       0.049 |      0.147 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.064 |       0.009 |      0.055 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -194,30 +194,30 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| fpga                                         |     2.736 |
+| fpga                                         |     2.709 |
 |   clk_125mhz_ibufg_inst                      |     0.003 |
-|   core_inst                                  |     1.079 |
-|     core_inst                                |     1.051 |
-|       core_pcie_inst                         |     0.962 |
-|       pcie_if_inst                           |     0.089 |
+|   core_inst                                  |     1.063 |
+|     core_inst                                |     1.035 |
+|       core_pcie_inst                         |     0.949 |
+|       pcie_if_inst                           |     0.087 |
 |     eth_mac_inst                             |     0.028 |
 |       eth_mac_1g_inst                        |     0.002 |
 |       rx_fifo                                |     0.013 |
 |       tx_fifo                                |     0.013 |
-|   dbg_hub                                    |     0.004 |
-|     inst                                     |     0.004 |
-|       BSCANID.u_xsdbm_id                     |     0.004 |
+|   dbg_hub                                    |     0.003 |
+|     inst                                     |     0.003 |
+|       BSCANID.u_xsdbm_id                     |     0.003 |
 |   gig_ethernet_pcs_pma_0                     |     0.160 |
 |     inst                                     |     0.160 |
 |       core_clocking_i                        |     0.006 |
 |       pcs_pma_block_i                        |     0.154 |
-|   pcie4_uscale_plus_inst                     |     1.368 |
-|     inst                                     |     1.368 |
-|       pcie4_uscale_plus_0_gt_top_i           |     1.018 |
-|       pcie4_uscale_plus_0_pcie_4_0_pipe_inst |     0.350 |
-|   u_ila_1                                    |     0.022 |
-|     inst                                     |     0.022 |
-|       ila_core_inst                          |     0.022 |
+|   pcie4_uscale_plus_inst                     |     1.366 |
+|     inst                                     |     1.366 |
+|       pcie4_uscale_plus_0_gt_top_i           |     1.017 |
+|       pcie4_uscale_plus_0_pcie_4_0_pipe_inst |     0.349 |
+|   u_ila_0                                    |     0.015 |
+|     inst                                     |     0.015 |
+|       ila_core_inst                          |     0.015 |
 +----------------------------------------------+-----------+
 
 

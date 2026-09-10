@@ -128,7 +128,7 @@ set rc [catch {
   set_param power.enableCarry8RouteBelPower 1
   set_param power.enableLutRouteBelPower 1
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 16  }
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu7ev-ffvc1156-2-e
   set_property design_mode GateLvl [current_fileset]

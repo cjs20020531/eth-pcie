@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1789024227">
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1789039563">
   <File Type="ROUTE-PWR" Name="fpga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fpga.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="fpga_power_summary_routed.pb"/>
@@ -1009,6 +1009,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../corundum-master/fpga/mqnic/ZCU106/fpga_pcie/rtl/fpga.v"/>
         <Attr Name="ImportTime" Val="1701509449"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_1/ila_1.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

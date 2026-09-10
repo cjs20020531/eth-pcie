@@ -10,73 +10,62 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="4,097"></ZoomEndTime>
-      <Cursor1Time time="2,250"></Cursor1Time>
+      <ZoomEndTime time="14,011"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="14" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="pcs_resetdone" type="logic">
+   <wvobject fp_name="axis_eth_rx_tlast" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">pcs_resetdone</obj_property>
-      <obj_property name="ObjectShortName">pcs_resetdone</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">axis_eth_rx_tlast</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_rx_tlast</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="pcs_mmcm_locked" type="logic">
+   <wvobject fp_name="axis_eth_rx_tready" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">pcs_mmcm_locked</obj_property>
-      <obj_property name="ObjectShortName">pcs_mmcm_locked</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">axis_eth_rx_tready</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_rx_tready</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="sfp_gtpowergood" type="logic">
+   <wvobject fp_name="axis_eth_rx_tvalid" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">sfp_gtpowergood</obj_property>
-      <obj_property name="ObjectShortName">sfp_gtpowergood</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">axis_eth_rx_tvalid</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_rx_tvalid</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="pcs_an_interrupt" type="logic">
+   <wvobject fp_name="axis_eth_tx_tlast" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">pcs_an_interrupt</obj_property>
-      <obj_property name="ObjectShortName">pcs_an_interrupt</obj_property>
+      <obj_property name="ElementShortName">axis_eth_tx_tlast</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_tx_tlast</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="pcs_status_vector" type="array">
+   <wvobject fp_name="axis_eth_tx_tready" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">pcs_status_vector[15:0]</obj_property>
-      <obj_property name="ObjectShortName">pcs_status_vector[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">axis_eth_tx_tready</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_tx_tready</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="phy_logic_rst" type="logic">
+   <wvobject fp_name="axis_eth_tx_tvalid" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">phy_logic_rst</obj_property>
-      <obj_property name="ObjectShortName">phy_logic_rst</obj_property>
+      <obj_property name="ElementShortName">axis_eth_tx_tvalid</obj_property>
+      <obj_property name="ObjectShortName">axis_eth_tx_tvalid</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="rst_50mhz_int" type="logic">
+   <wvobject fp_name="mac_rx_reset_sync_reg" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">rst_50mhz_int</obj_property>
-      <obj_property name="ObjectShortName">rst_50mhz_int</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="pcs_status_vector" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">pcs_status_vector[15:0]</obj_property>
-      <obj_property name="ObjectShortName">pcs_status_vector[15:0]</obj_property>
+      <obj_property name="ElementShortName">mac_rx_reset_sync_reg[3:3]</obj_property>
+      <obj_property name="ObjectShortName">mac_rx_reset_sync_reg[3:3]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -85,6 +74,13 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">phy_rx_dv</obj_property>
       <obj_property name="ObjectShortName">phy_rx_dv</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="phy_rx_er" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">phy_rx_er</obj_property>
+      <obj_property name="ObjectShortName">phy_rx_er</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -103,11 +99,25 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
+   <wvobject fp_name="phy_tx_er" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">phy_tx_er</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_er</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
    <wvobject fp_name="phy_txd" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">phy_txd[7:0]</obj_property>
       <obj_property name="ObjectShortName">phy_txd[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="rst" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
