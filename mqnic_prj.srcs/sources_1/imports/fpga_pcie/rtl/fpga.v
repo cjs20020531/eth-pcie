@@ -963,7 +963,7 @@ wire [DDR_CH-1:0]                     m_axi_ddr_rvalid;
 wire [DDR_CH-1:0]                     m_axi_ddr_rready;
 
 wire [DDR_CH-1:0]                     ddr_status;
-
+wire [7:0]                            core_led;
 generate
 
 if (DDR_ENABLE && DDR_CH > 0) begin
@@ -1286,7 +1286,7 @@ core_inst (
     .btnr(btnr_int),
     .btnc(btnc_int),
     .sw(sw_int),
-    .led(led),
+    .led(core_led),
 
     /*
      * I2C
@@ -1468,23 +1468,7 @@ BUFG clk_125mhz_dbg_bufg_inst (
     .I(clk_125mhz_ibufg),
     .O(clk_125mhz_dbg)
 );
-wire clk_125mhz_pll_raw;
-wire clk_125mhz_ila;
-  clk_wiz_0 u_clk_wiz_0
-   (
-    // Clock out ports
-    .clk_out1(clk_125mhz_pll_raw),     // output clk_out1
-    // Status and control signals
-    .reset(0), // input reset
-    .locked(),       // output locked
-   // Clock in ports
-    .clk_in1(clk_125mhz_ibufg)      // input clk_in1
-);
 
-BUFG clk_125mhz_ila_bufg_inst (
-    .I(clk_125mhz_pll_raw),
-    .O(clk_125mhz_ila)
-);
 
 //ila_1 u_ila_1 (
 //	.clk(clk_125mhz_int), // input wire clk
@@ -1505,7 +1489,7 @@ BUFG clk_125mhz_ila_bufg_inst (
 
 
 ila_0 u_ila_0 (
-	.clk(clk_125mhz_ila), // input wire clk
+	.clk(clk_125mhz_dbg), // input wire clk
 
 
 	.probe0(core_inst.axis_eth_tx_tvalid[0]), // input wire [0:0]  probe0  
@@ -1523,6 +1507,19 @@ ila_0 u_ila_0 (
 	.probe12(core_inst.rst),
 	.probe13(core_inst.mac_rx_reset_sync_reg[3])
 );
+reg [26:0] clk_125mhz_dbg_counter = 27'd0;
+reg [26:0] clk_125mhz_ibufg_counter = 27'd0;
+always @(posedge clk_125mhz_dbg) begin
+    clk_125mhz_dbg_counter <= clk_125mhz_dbg_counter + 1'b1;
+end
+
+always @(posedge clk_125mhz_ibufg) begin
+    clk_125mhz_ibufg_counter <= clk_125mhz_ibufg_counter + 1'b1;
+end
+
+assign led[7:2] = core_led[7:2];
+assign led[1] =  clk_125mhz_ibufg_counter[26];
+assign led[0] =  clk_125mhz_dbg_counter[26];
 
 
 endmodule
